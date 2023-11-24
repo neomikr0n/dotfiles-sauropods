@@ -1,17 +1,14 @@
 # sauropods theme 🦕 🦕💚
 My **[Hyprland](https://github.com/topics/hyprland) dotfiles** on [Garuda](https://garudalinux.org/) (arch btw), Linux.
 
-***waybar and animated wallpaper***
+***waybar***
 ![lol](https://0x0.st/HwJv.png)
 
-***cava, qbittorrent, btop***
-![lol](https://0x0.st/HwJD.png)
-
-<!-- ***brave, vscode***
+***brave, vscode***
 ![lol](https://0x0.st/HwJt.png)
 
 ***dolphin, foot***
-![lol](https://0x0.st/HwJy.png) -->
+![lol](https://0x0.st/HwJy.png)
 
 ***spotify, glava, timer (w/ lolcat)***
 ![lol](https://0x0.st/HwJO.png)

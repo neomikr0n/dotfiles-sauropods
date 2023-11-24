@@ -5,7 +5,7 @@ My **[Hyprland](https://github.com/topics/hyprland) dotfiles** on [Garuda](https
 ![lol](https://0x0.st/HwJv.png)
 
 ***cava, qbittorrent, btop***
-![lol](https://0x0.st/HwJD.png)
+![lol](https://0x0.st/HwJv.png)
 
 <!-- ***brave, vscode***
 ![lol](https://0x0.st/HwJt.png)
