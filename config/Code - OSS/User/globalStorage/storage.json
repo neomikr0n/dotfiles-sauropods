@@ -94,6 +94,17 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/n30/.dotfiles/README.md",
+                                        "path": "/home/n30/.dotfiles/README.md",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/README.md"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/n30/Documents/debugging_2023-11-11_1331.log",
                                         "path": "/home/n30/Documents/debugging_2023-11-11_1331.log",
                                         "scheme": "file"
@@ -190,17 +201,6 @@
                                     "label": "~/.dotfiles/config/swaync/config.json"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.dotfiles/config/swaync/style.css",
-                                        "path": "/home/n30/.dotfiles/config/swaync/style.css",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles/config/swaync/style.css"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -256,6 +256,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Settings Profile (Default)..."
@@ -1697,10 +1704,10 @@
             "backupPath": "/home/n30/.config/Code - OSS/Backups/1feba4cd03760bc246259d32580ab904",
             "uiState": {
                 "mode": 1,
-                "x": 2507,
-                "y": 750,
-                "width": 923,
-                "height": 680
+                "x": 2306,
+                "y": 50,
+                "width": 1124,
+                "height": 1380
             }
         },
         "openedWindows": []

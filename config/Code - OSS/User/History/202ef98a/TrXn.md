@@ -10,7 +10,7 @@ My **Hyprland dotfiles** on (Garuda)[https://garudalinux.org/], (arch btw), Linu
 ![lol](https://0x0.st/HP3a.png)
 
 
-***spotify, glava, timer***
+***qbitorrent, btop***
 ![lol](https://0x0.st/HwJO.png)
 
 ---

@@ -1,11 +1,11 @@
 {
-    "break": "Lean back at your seat and relax",
+    "break": "Focus on a point in the far distance",
     "plugin": {
         "healthstats": {
             "last_screen_time": 24194,
             "next_reset_time": "2023-11-25 00:00:00",
-            "no_of_breaks": 3,
-            "no_of_skipped_breaks": 2,
+            "no_of_breaks": 7,
+            "no_of_skipped_breaks": 3,
             "safe_eyes_start_time": "2023-11-07 19:21:53",
             "total_idle_time": 0
         }

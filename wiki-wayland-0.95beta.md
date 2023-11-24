@@ -4752,18 +4752,30 @@ Note that turning off a display using DPMS does not shut down your computer or t
 
 > # **[dotfiles git](https://blog.smalleycreative.com/using-git-and-github-to-manage-your-dotfiles/)**
 
-```
-cd ~/.dotfiles && git init
 git config --global init.defaultBranch main
-git add .
 git config --global user.email "shokytox@gmail.com"
 git config --global user.name "neomikr0n"
+
+```
+cd ~/.dotfiles && git init
+git add .
 git commit -m 'First Git commit of my dotfiles :D'
 git branch -M main
 git remote add origin https://github.com/neomikr0n/dotfiles.git
 git config --global credential.helper store
 git push origin main
 ```
+
+ ╰─λ git push origin main
+https://github.com/neomikr0n/dotfiles.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/neomikr0n/dotfiles.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
 
 - The default branch has been renamed!
 
@@ -5036,6 +5048,14 @@ This part exists because of Wayland's security policy, which means you cannot ru
   Uploader for the 0x0 file sharing service.
 
   `0x0uploader '/home/n30/Pictures/Screenshots/ss_2023-04-26-18-2149_garuda.png'`
+
+  curl -F'file=@/home/n30/Pictures/Screenshots/ss_2023-11-24_16-57_38_garuda.png' https://0x0.st
+https://0x0.st/HwJO.png
+
+- ## [tealdeer](https://github.com/dbrgn/tealdeer): 
+A very fast implementation of tldr in Rust: Simplified, example based and community-driven man pages.
+
+
 
 
 - ## [tldr](https://github.com/tldr-pages/tldr): 
