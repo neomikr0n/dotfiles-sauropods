@@ -2,12 +2,12 @@
 My **Hyprland dotfiles** on (Garuda)[https://garudalinux.org/], (arch btw), Linux.
 
 
-***waybar, brave, vscode***
-![lol](https://0x0.st/HwJt.png)
+***waybar, firedragon, vscode, foot***
+![lol](https://0x0.st/HP3q.png)
 
 
 ***dolphin, foot***
-![lol](https://0x0.st/HwJy.png
+![lol](https://0x0.st/HwJy.pnghttps://0x0.st/HwJt.png
 )
 
 
