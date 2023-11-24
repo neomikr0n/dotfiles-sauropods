@@ -1,0 +1,192 @@
+# ░█▀▀▄░█▀▀░▄▀▀▄░█▀▄▀█░░▀░░█░▄░█▀▀▄░█▀▀█░█▀▀▄░░   # HYPRLAND SETTINGS FOR MY 'GRAVITY' THEME
+# ░█░▒█░█▀▀░█░░█░█░▀░█░░█▀░█▀▄░█▄▄▀░█▄▀█░█░▒█░░   # to apply, add the following to hyprland.conf:
+# ░▀░░▀░▀▀▀░░▀▀░░▀░░▒▀░▀▀▀░▀░▀░▀░▀▀░█▄▄█░▀░░▀░░   # source=~/.config/hypr/configs/NAMEOFTHECONFIGFILE
+
+input {
+    sensitivity=1.0 #Prefer using input:sensitivity over general:sensitivity to avoid bugs, especially with Wine/Proton apps.
+    
+    # http://wiki.hyprland.org/Configuring/Uncommon-tips--tricks/#switchable-keyboard-layouts
+    kb_layout=latam         #because mexican 🇲🇽
+    numlock_by_default=true
+    follow_mouse=1
+
+    # Remap Caps-Lock to Ctrl
+    # https://wiki.hyprland.org/Configuring/Uncommon-tips--tricks/#remap-caps-lock-to-ctrl
+    # kb_options = esc:nocaps
+    
+    touchpad {
+        natural_scroll=no
+    }
+    
+    # to change the key repeat rate
+    # repeat_delay = 300
+    # repeat_rate = 50
+}
+
+misc {
+disable_hyprland_logo = false
+disable_splash_rendering = true
+mouse_move_enables_dpms = true
+key_press_enables_dpms = true #TODO: not working :o
+vfr=true
+vrr=1
+force_hypr_chan=true
+# animate_manual_resizes=true     #animate manual window resizes/moves
+# no_vfr=false  # DEPRECATED??? disables VFR (variable frame rate) - VFR increases battery life at the expense of possible issues on a few monitors.
+no_direct_scanout = true #for fullscreen games
+enable_swallow = true
+swallow_regex = ^()$
+}
+
+general {
+    layout = dwindle        #TODO: change for master/dwindle? 🤔    
+# enable_compositing=true
+
+#    sensitivity=1.0 # for mouse cursor, Prefer using input:sensitivity over general:sensitivity to avoid bugs, especially with Wine/Proton apps.
+#     main_mod=SUPER
+    gaps_in=1
+    gaps_out=13
+    border_size=4
+    apply_sens_to_raw=0 # whether to apply the sensitivity to raw input (e.g. used by games where you aim using your mouse)
+    col.inactive_border=43ff641a        #43ff641a a.k.a. transparent
+    col.active_border= rgba(e689faff) rgba(89b4faff) rgba(cba6f7ff) rgba(89b4faff) rgba(e689faff) 30deg 
+    # #e689faff #89b4faff #e689faff #89b4faff #e689faff 
+    # https://www.rgbtohex.net/rgb/230-137-250
+    # Complements: #e689fa#fa8c89#89fab9  Triad: #e689fa#fae689#89fae6  Tetrad #e689fa#faad89#9dfa89#89d5fa  
+    # Monochromatic #e689fa#221525#4a2c50#71437a#985aa5#bf72cf       Analogous #e689fa#b989fa#cf89fa#e689fa#fa89f7#fa89e1
+
+    # OLD    
+    # col.active_border=rgba(cba6f7ff) rgba(89b4faff) rgba(94e2d5ff) 10deg
+    # col.active_border= rgba(89b4faff) rgba(ffffff00) rgba(ffffff00) rgba(cba6f7ff) rgba(ffffff00) rgba(ffffff00) rgba(89b4faff) 30deg 
+    # col.active_border= rgba(cba6f7ff) rgba(89b4faff) rgba(cba6f7ff) rgba(89b4faff) rgba(cba6f7ff) 30deg
+    
+    # col.active_border= rgba(cba6f7ff) rgba(89b4faff) rgba(cba6f7ff) rgba(89b4faff) rgba(cba6f7ff) 30deg 
+    # #cba6f7ff #89b4faff #cba6f7ff #89b4faff #cba6f7ff #e689faff   
+}
+
+decoration {
+    dim_inactive = 0
+    rounding = 16
+    #multisample_edges = true       #drepecated?
+    inactive_opacity = .95
+    drop_shadow = true
+    shadow_range=19
+    shadow_render_power=5
+    col.shadow= 0x33000000
+    col.shadow_inactive=0x22000000
+    rounding=15
+
+blur {
+  enabled= true
+  size= 2
+  passes= 2 #more passes = more resource intensive.
+#   new_optimizations =
+    blurls = rofi
+    blurls = wofi
+    # blurls = code-oss
+    # blurls = brave-browser
+}
+}
+
+animations {
+    enabled=1
+    # bezier=overshot,0.05,0.9,0.1,1.1
+    bezier=overshot,0.13,0.99,0.29,1.1
+    # bezier=workspace_swipe,0.55,0.85,0.68,0.53
+    # bezier=workspace_swipe,0.79,0.33,0.14,0.53
+    bezier=workspace_swipe,0.87,0,0.13,1
+    animation=windows,1,3,overshot,slide
+    #animation=borderangle,1,100,default,loop
+    animation=border,1,1,overshot
+    animation=fade,1,10,default
+    animation=workspaces,1,2,workspace_swipe,slide
+    animation=specialWorkspace,1,2,overshot,slidevert
+#   animation= borderangle, 1, 100, default, loop
+}
+
+dwindle {
+    pseudotile=1 # enable pseudotiling on dwindle
+    force_split=0
+    #col.group_border=0xff89dceb
+    #col.group_border_active=0xfff9e2af
+    preserve_split = true       # https://wiki.hyprland.org/Configuring/Dwindle-Layout/
+    special_scale_factor=0.92
+
+}
+
+master {
+# https://wiki.hyprland.org/Configuring/Master-Layout/
+    special_scale_factor=0.9
+    #TODO:
+# https://github.com/kronikpillow/hyprland-dotfiles/blob/main/.config/hypr/hyprland.conf :
+    mfact = 0.75
+    new_is_master = false
+    new_on_top = false
+    no_gaps_when_only = false
+    orientation = left
+    inherit_fullscreen = true
+    always_center_master = true
+}
+
+gestures {
+    workspace_swipe= yes
+    workspace_swipe_fingers= 4
+}
+
+
+# █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀▄▀█ ▄▀█ █▄░█ ▄▀█ █▀▀ █▀▄▀█ █▀▀ █▄░█ ▀█▀
+# ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀   █░▀░█ █▀█ █░▀█ █▀█ █▄█ █░▀░█ ██▄ █░▀█ ░█░
+$mainMod= SUPER
+
+# Special workspace scratchpad
+bindr= $mainMod, $mainMod_L, togglespecialworkspace,
+bind= ALT,bar,movetoworkspacesilent,special
+
+bind= SUPER,1,workspace,1
+bind= SUPER,2,workspace,2
+bind= SUPER,3,workspace,3
+bind= SUPER,4,workspace,4
+bind= SUPER,5,workspace,5
+bind= SUPER,6,workspace,6
+bind= SUPER,7,workspace,7
+bind= SUPER,8,workspace,8
+bind= SUPER,9,workspace,9
+bind= SUPER,0,workspace,10
+
+bind= SUPER,left,movefocus,l
+bind= SUPER,right,movefocus,r
+bind= SUPER,up,movefocus,u
+bind= SUPER,down,movefocus,d
+
+bind= ALT,1,movetoworkspacesilent,1
+bind= ALT,2,movetoworkspacesilent,2
+bind= ALT,3,movetoworkspacesilent,3
+bind= ALT,4,movetoworkspacesilent,4
+bind= ALT,5,movetoworkspacesilent,5
+bind= ALT,6,movetoworkspacesilent,6
+bind= ALT,7,movetoworkspacesilent,7
+bind= ALT,8,movetoworkspacesilent,8
+bind= ALT,9,movetoworkspacesilent,9
+bind= ALT,0,movetoworkspacesilent,10
+# bind = $mainMod SHIFT, bracketleft, movetoworkspacesilent, -1
+# bind = $mainMod SHIFT, bracketright, movetoworkspacesilent, +1
+
+bind= SHIFTALT,1, movetoworkspace, 1
+bind= SHIFTALT,2, movetoworkspace, 2
+bind= SHIFTALT,3, movetoworkspace, 3
+bind= SHIFTALT,4, movetoworkspace, 4
+bind= SHIFTALT,5, movetoworkspace, 5
+bind= SHIFTALT,6, movetoworkspace, 6
+bind= SHIFTALT,7, movetoworkspace, 7
+bind= SHIFTALT,8, movetoworkspace, 8
+bind= SHIFTALT,9, movetoworkspace, 9
+bind= SHIFTALT,0, movetoworkspace, 10
+bind= SHIFTALT,bracketleft, movetoworkspace, -1
+bind= SHIFTALT,bracketright, movetoworkspace, +1
+
+# Scroll through existing workspaces with mainMod + scroll
+bind= SUPER,mouse_down,workspace,e+1
+bind= SUPER,mouse_up,workspace,e-1
+
+bind= SUPER,g,togglegroup
+bind= SUPER,tab,focusUrgentOrLast    #allows to switch back and forth (toggle) between the currently focused and the previously focused window across workspaces or within the same workspace.

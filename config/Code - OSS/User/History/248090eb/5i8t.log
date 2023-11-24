@@ -1,0 +1,531 @@
+
+
+nov 11 12:14:41 garuda systemd[1]: systemd-coredump@20-109116-0.service: Deactivated successfully.
+nov 11 12:15:21 garuda sudo[109429]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:16:13 garuda sudo[110183]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:16:14 garuda sudo[110222]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:23 garuda sudo[111809]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:31 garuda sudo[111891]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:34 garuda sudo[111951]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:34 garuda sudo[111992]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:55 garuda sudo[112205]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:57 garuda sudo[112246]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:58 garuda sudo[112296]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:19:59 garuda sudo[112327]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:20:51 garuda kernel: pcieport 0000:00:1a.0: AER: Corrected error received: 0000:00:1a.0
+nov 11 12:20:51 garuda kernel: pcieport 0000:00:1a.0: PCIe Bus Error: severity=Corrected, type=Physical Layer, (Receiver ID)
+nov 11 12:20:51 garuda kernel: pcieport 0000:00:1a.0:   device [8086:7ac8] error status/mask=00000001/00002000
+nov 11 12:20:51 garuda kernel: pcieport 0000:00:1a.0:    [ 0] RxErr                  (First)
+nov 11 12:24:48 garuda dbus-daemon[869]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.106' (uid=0 pid=113554 comm="sudo pacman --sync -- chaotic-aur/librewolf")
+nov 11 12:24:48 garuda dbus-daemon[869]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+nov 11 12:24:50 garuda sudo[113554]:      n30 : TTY=pts/0 ; PWD=/home/n30 ; USER=root ; COMMAND=/usr/bin/pacman --sync -- chaotic-aur/librewolf
+nov 11 12:24:50 garuda sudo[113554]: pam_unix(sudo:session): session opened for user root(uid=0) by n30(uid=1000)
+nov 11 12:24:59 garuda dbus-daemon[869]: [system] Activating via systemd: service name='org.opensuse.Snapper' unit='snapperd.service' requested by ':1.107' (uid=0 pid=113616 comm="snapper --config root create --cleanup-algorithm n")
+nov 11 12:24:59 garuda dbus-daemon[869]: [system] Successfully activated service 'org.opensuse.Snapper'
+nov 11 12:24:59 garuda systemd[1]: Starting DBus interface for snapper...
+nov 11 12:24:59 garuda systemd[1]: Started DBus interface for snapper.
+nov 11 12:24:59 garuda systemd[1]: Starting Regenerate grub-btrfs.cfg...
+nov 11 12:24:59 garuda bash[113625]: Detecting snapshots ...
+nov 11 12:24:59 garuda bash[113625]: Found snapshot: 2023-11-11 12:24:59 | @/.snapshots/164/snapshot | pre    | pacman --sync -- chaotic-aur/librewolf                                   |
+nov 11 12:24:59 garuda bash[113625]: Found snapshot: 2023-11-11 11:50:04 | @/.snapshots/163/snapshot | post   | vrrtest-git                                                              |
+nov 11 12:24:59 garuda bash[113625]: Found snapshot: 2023-11-11 11:50:04 | @/.snapshots/162/snapshot | pre    | pacman --upgrade --noconfirm -- /home/n30/.cache/paru/clone/vrrtest-git/ |
+nov 11 12:24:59 garuda bash[113625]: Found snapshot: 2023-11-11 11:49:52 | @/.snapshots/161/snapshot | post   | love                                                                     |
+nov 11 12:24:59 garuda bash[113625]: Found snapshot: 2023-11-11 11:49:51 | @/.snapshots/160/snapshot | pre    | pacman --sync -- extra/love                                              |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-11 09:10:42 | @/.snapshots/159/snapshot | post   | nomacs-qt6-git                                                           |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-11 09:10:42 | @/.snapshots/158/snapshot | pre    | pacman --upgrade --noconfirm -- /home/n30/.cache/paru/clone/nomacs-qt6-g |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-11 09:07:31 | @/.snapshots/157/snapshot | post   | git-lfs opencv qt6-5compat qt6-tools                                     |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-11 09:07:30 | @/.snapshots/156/snapshot | pre    | pacman --sync -- extra/git-lfs extra/qt6-tools extra/opencv extra/qt6-5c |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-10 20:12:16 | @/.snapshots/155/snapshot | post   | baloo-widgets brave-bin dolphin electron25 eza fastfetch garuda-boot-opt |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-10 20:11:57 | @/.snapshots/154/snapshot | pre    | pacman -Su                                                               |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 20:05:11 | @/.snapshots/153/snapshot | post   | tty-clock                                                                |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 20:05:10 | @/.snapshots/152/snapshot | pre    | pacman --sync -- chaotic-aur/tty-clock                                   |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 18:03:49 | @/.snapshots/151/snapshot | post   | android-udev btrfs-progs candy-icons-git corectrl discord easyeffects ex |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 18:02:49 | @/.snapshots/150/snapshot | pre    | pacman -Su                                                               |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 17:21:49 | @/.snapshots/149/snapshot | post   | cliphist                                                                 |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 17:21:49 | @/.snapshots/148/snapshot | pre    | pacman -S extra/cliphist                                                 |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 17:04:00 | @/.snapshots/147/snapshot | post   | swappy-git                                                               |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-08 17:04:00 | @/.snapshots/146/snapshot | pre    | pacman --upgrade --noconfirm -- /home/n30/.cache/paru/clone/swappy-git/s |
+nov 11 12:25:00 garuda bash[113625]: Found snapshot: 2023-11-05 09:01:47 | @/.snapshots/131/snapshot | single | NOSDDM                                                                   |
+nov 11 12:25:00 garuda bash[114311]: if [ ! -e "${prefix}/grub-btrfs.cfg" ]; then
+nov 11 12:25:00 garuda bash[114311]: echo ""
+nov 11 12:25:00 garuda bash[114311]: else
+nov 11 12:25:00 garuda bash[114311]: submenu 'Garuda Linux snapshots' {
+nov 11 12:25:00 garuda bash[114311]:     configfile "${prefix}/grub-btrfs.cfg"
+nov 11 12:25:00 garuda bash[114311]: }
+nov 11 12:25:00 garuda bash[114311]: fi
+nov 11 12:25:00 garuda bash[113625]: Found 20 snapshot(s)
+nov 11 12:25:00 garuda bash[113625]: Unmount /tmp/grub-btrfs.JgFPZwmiwO .. Success
+nov 11 12:25:00 garuda systemd[1]: tmp-grub\x2dbtrfs.JgFPZwmiwO.mount: Deactivated successfully.
+nov 11 12:25:00 garuda systemd[1]: grub-btrfs-snapper.service: Deactivated successfully.
+nov 11 12:25:00 garuda systemd[1]: Finished Regenerate grub-btrfs.cfg.
+nov 11 12:25:00 garuda systemd[1]: Starting Regenerate grub-btrfs.cfg...
+nov 11 12:25:00 garuda bash[114371]: Detecting snapshots ...
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 12:24:59 | @/.snapshots/164/snapshot | pre    | pacman --sync -- chaotic-aur/librewolf                                   |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 11:50:04 | @/.snapshots/163/snapshot | post   | vrrtest-git                                                              |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 11:50:04 | @/.snapshots/162/snapshot | pre    | pacman --upgrade --noconfirm -- /home/n30/.cache/paru/clone/vrrtest-git/ |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 11:49:52 | @/.snapshots/161/snapshot | post   | love                                                                     |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 11:49:51 | @/.snapshots/160/snapshot | pre    | pacman --sync -- extra/love                                              |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 09:10:42 | @/.snapshots/159/snapshot | post   | nomacs-qt6-git                                                           |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 09:10:42 | @/.snapshots/158/snapshot | pre    | pacman --upgrade --noconfirm -- /home/n30/.cache/paru/clone/nomacs-qt6-g |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 09:07:31 | @/.snapshots/157/snapshot | post   | git-lfs opencv qt6-5compat qt6-tools                                     |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-11 09:07:30 | @/.snapshots/156/snapshot | pre    | pacman --sync -- extra/git-lfs extra/qt6-tools extra/opencv extra/qt6-5c |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-10 20:12:16 | @/.snapshots/155/snapshot | post   | baloo-widgets brave-bin dolphin electron25 eza fastfetch garuda-boot-opt |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-10 20:11:57 | @/.snapshots/154/snapshot | pre    | pacman -Su                                                               |
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-08 20:05:11 | @/.snapshots/153/snapshot | post   | tty-clock                                                                |
+nov 11 12:25:00 garuda sudo[113554]: pam_unix(sudo:session): session closed for user root
+nov 11 12:25:00 garuda bash[114371]: Found snapshot: 2023-11-08 20:05:10 | @/.snapshots/152/snapshot | pre    | pacman --sync -- chaotic-aur/tty-clock                                   |
+nov 11 12:25:01 garuda bash[114371]: Found snapshot: 2023-11-08 18:03:49 | @/.snapshots/151/snapshot | post   | android-udev btrfs-progs candy-icons-git corectrl discord easyeffects ex |
+nov 11 12:25:01 garuda bash[114371]: Found snapshot: 2023-11-08 18:02:49 | @/.snapshots/150/snapshot | pre    | pacman -Su                                                               |
+nov 11 12:25:01 garuda dbus-daemon[869]: [system] Activating via systemd: service name='org.freedesktop.home1' unit='dbus-org.freedesktop.home1.service' requested by ':1.110' (uid=0 pid=114941 comm="/usr/bin/sudo -n true")
+nov 11 12:25:01 garuda dbus-daemon[869]: [system] Activation via systemd failed for unit 'dbus-org.freedesktop.home1.service': Unit dbus-org.freedesktop.home1.service not found.
+nov 11 12:25:01 garuda sudo[114941]:      n30 : TTY=pts/0 ; PWD=/home/n30 ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:25:01 garuda sudo[114941]: pam_unix(sudo:session): session opened for user root(uid=0) by n30(uid=1000)
+nov 11 12:25:01 garuda bash[114371]: Found snapshot: 2023-11-08 17:21:49 | @/.snapshots/149/snapshot | post   | cliphist                                                                 |
+nov 11 12:25:01 garuda sudo[114941]: pam_unix(sudo:session): session closed for user root
+nov 11 12:25:01 garuda bash[114371]: Found snapshot: 2023-11-08 17:21:49 | @/.snapshots/148/snapshot | pre    | pacman -S extra/cliphist                                                 |
+nov 11 12:25:01 garuda bash[114371]: Found snapshot: 2023-11-08 17:04:00 | @/.snapshots/147/snapshot | post   | swappy-git                                                               |
+nov 11 12:25:01 garuda bash[114371]: Found snapshot: 2023-11-08 17:04:00 | @/.snapshots/146/snapshot | pre    | pacman --upgrade --noconfirm -- /home/n30/.cache/paru/clone/swappy-git/s |
+nov 11 12:25:01 garuda bash[114371]: Found snapshot: 2023-11-05 09:01:47 | @/.snapshots/131/snapshot | single | NOSDDM                                                                   |
+nov 11 12:25:01 garuda bash[115088]: if [ ! -e "${prefix}/grub-btrfs.cfg" ]; then
+nov 11 12:25:01 garuda bash[115088]: echo ""
+nov 11 12:25:01 garuda bash[115088]: else
+nov 11 12:25:01 garuda bash[115088]: submenu 'Garuda Linux snapshots' {
+nov 11 12:25:01 garuda bash[115088]:     configfile "${prefix}/grub-btrfs.cfg"
+nov 11 12:25:01 garuda bash[115088]: }
+nov 11 12:25:01 garuda bash[115088]: fi
+nov 11 12:25:01 garuda bash[114371]: Found 20 snapshot(s)
+nov 11 12:25:01 garuda bash[114371]: Unmount /tmp/grub-btrfs.yWi5SYXA3X .. Success
+nov 11 12:25:01 garuda systemd[1]: tmp-grub\x2dbtrfs.yWi5SYXA3X.mount: Deactivated successfully.
+nov 11 12:25:01 garuda systemd[1]: grub-btrfs-snapper.service: Deactivated successfully.
+nov 11 12:25:01 garuda systemd[1]: Finished Regenerate grub-btrfs.cfg.
+nov 11 12:25:08 garuda dbus-daemon[869]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.111' (uid=1000 pid=115194 comm="/usr/lib/librewolf/librewolf")
+nov 11 12:25:08 garuda systemd[1]: Starting Time & Date Service...
+nov 11 12:25:08 garuda dbus-daemon[869]: [system] Successfully activated service 'org.freedesktop.timedate1'
+nov 11 12:25:08 garuda systemd[1]: Started Time & Date Service.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Successfully made thread 115343 of process 115194 owned by '1000' RT at priority 10.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:08 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:09 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:09 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:09 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:09 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:37 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:37 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:38 garuda systemd[1]: systemd-timedated.service: Deactivated successfully.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Successfully made thread 115727 of process 115638 owned by '1000' RT at priority 10.
+nov 11 12:25:39 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:25:47 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:25:47 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:25:49 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:25:49 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:25:49 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:25:49 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:25:49 garuda rtkit-daemon[1673]: Successfully made thread 115828 of process 115765 owned by '1000' RT at priority 10.
+nov 11 12:25:49 garuda rtkit-daemon[1673]: Supervising 3 threads of 3 processes of 1 users.
+nov 11 12:26:00 garuda systemd[1]: snapperd.service: Deactivated successfully.
+nov 11 12:26:14 garuda rtkit-daemon[1673]: Supervising 3 threads of 3 processes of 1 users.
+nov 11 12:26:14 garuda rtkit-daemon[1673]: Supervising 3 threads of 3 processes of 1 users.
+nov 11 12:26:14 garuda rtkit-daemon[1673]: Supervising 3 threads of 3 processes of 1 users.
+nov 11 12:26:14 garuda rtkit-daemon[1673]: Supervising 3 threads of 3 processes of 1 users.
+nov 11 12:26:14 garuda rtkit-daemon[1673]: Supervising 3 threads of 3 processes of 1 users.
+nov 11 12:26:14 garuda rtkit-daemon[1673]: Supervising 3 threads of 3 processes of 1 users.
+nov 11 12:26:26 garuda dbus-daemon[869]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.132' (uid=1000 pid=116499 comm="/usr/lib/librewolf/librewolf --backgroundtask remo")
+nov 11 12:26:26 garuda systemd[1]: Starting Time & Date Service...
+nov 11 12:26:26 garuda dbus-daemon[869]: [system] Successfully activated service 'org.freedesktop.timedate1'
+nov 11 12:26:26 garuda systemd[1]: Started Time & Date Service.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Supervising 0 threads of 0 processes of 0 users.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Successfully made thread 116749 of process 116620 owned by '1000' RT at priority 10.
+nov 11 12:26:28 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:29 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:30 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:30 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Supervising 1 threads of 1 processes of 1 users.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Successfully made thread 117531 of process 116885 owned by '1000' RT at priority 10.
+nov 11 12:26:50 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:26:51 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:26:51 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:26:58 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:26:58 garuda rtkit-daemon[1673]: Supervising 2 threads of 2 processes of 1 users.
+nov 11 12:26:58 garuda systemd[1]: systemd-timedated.service: Deactivated successfully.
+nov 11 12:27:12 garuda dbus-daemon[869]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.151' (uid=1000 pid=117732 comm="/usr/lib/librewolf/librewolf --backgroundtask remo")
+nov 11 12:27:13 garuda systemd[1]: Starting Time & Date Service...
+nov 11 12:27:13 garuda dbus-daemon[869]: [system] Successfully activated service 'org.freedesktop.timedate1'
+nov 11 12:27:13 garuda systemd[1]: Started Time & Date Service.
+nov 11 12:27:43 garuda systemd[1]: systemd-timedated.service: Deactivated successfully.
+nov 11 12:28:02 garuda sudo[118040]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:28:04 garuda systemd-logind[875]: The system will suspend now!
+nov 11 12:28:04 garuda NetworkManager[910]: <info>  [1699727284.6918] manager: sleep: sleep requested (sleeping: no  enabled: yes)
+nov 11 12:28:04 garuda ModemManager[952]: <msg> [sleep-monitor-systemd] system is about to suspend
+nov 11 12:28:04 garuda NetworkManager[910]: <info>  [1699727284.6920] manager: NetworkManager state is now ASLEEP
+nov 11 12:28:04 garuda systemd[1]: Reached target Sleep.
+nov 11 12:28:04 garuda systemd[1]: Starting System Suspend...
+nov 11 12:28:04 garuda systemd-sleep[118085]: Entering sleep state 'suspend'...
+nov 11 12:28:04 garuda kernel: PM: suspend entry (deep)
+nov 11 12:28:04 garuda kernel: Filesystems sync: 0.016 seconds
+nov 11 12:28:14 garuda kernel: Freezing user space processes
+nov 11 12:28:14 garuda kernel: Freezing user space processes completed (elapsed 0.002 seconds)
+nov 11 12:28:14 garuda kernel: OOM killer disabled.
+nov 11 12:28:14 garuda kernel: Freezing remaining freezable tasks
+nov 11 12:28:14 garuda kernel: Freezing remaining freezable tasks completed (elapsed 0.001 seconds)
+nov 11 12:28:14 garuda kernel: printk: Suspending console(s) (use no_console_suspend to debug)
+nov 11 12:28:14 garuda kernel: sd 5:0:0:0: [sdb] Synchronizing SCSI cache
+nov 11 12:28:14 garuda kernel: sd 6:0:0:0: [sdc] Synchronizing SCSI cache
+nov 11 12:28:14 garuda kernel: sd 4:0:0:0: [sda] Synchronizing SCSI cache
+nov 11 12:28:14 garuda kernel: ata7.00: Entering standby power mode
+nov 11 12:28:14 garuda kernel: ata6.00: Entering standby power mode
+nov 11 12:28:14 garuda kernel: sd 7:0:0:0: [sdd] Synchronizing SCSI cache
+nov 11 12:28:14 garuda kernel: ata8.00: Entering standby power mode
+nov 11 12:28:14 garuda kernel: ata5.00: Entering standby power mode
+nov 11 12:28:14 garuda kernel: ACPI: EC: interrupt blocked
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: MODE1 reset
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: GPU mode1 reset
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: GPU smu mode1 reset
+nov 11 12:28:14 garuda kernel: ACPI: PM: Preparing to enter system sleep state S3
+nov 11 12:28:14 garuda kernel: ACPI: EC: event blocked
+nov 11 12:28:14 garuda kernel: ACPI: EC: EC stopped
+nov 11 12:28:14 garuda kernel: ACPI: PM: Saving platform NVS memory
+nov 11 12:28:14 garuda kernel: Disabling non-boot CPUs ...
+nov 11 12:28:14 garuda kernel: smpboot: CPU 1 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 2 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 3 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 4 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 5 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 6 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 7 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 8 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 9 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 10 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 11 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 12 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 13 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 14 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 15 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 16 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 17 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 18 is now offline
+nov 11 12:28:14 garuda kernel: smpboot: CPU 19 is now offline
+nov 11 12:28:14 garuda kernel: ACPI: PM: Low-level resume complete
+nov 11 12:28:14 garuda kernel: ACPI: EC: EC started
+nov 11 12:28:14 garuda kernel: ACPI: PM: Restoring platform NVS memory
+nov 11 12:28:14 garuda kernel: Enabling non-boot CPUs ...
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 1 APIC 0x1
+nov 11 12:28:14 garuda kernel: CPU1 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 2 APIC 0x8
+nov 11 12:28:14 garuda kernel: CPU2 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 3 APIC 0x9
+nov 11 12:28:14 garuda kernel: CPU3 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 4 APIC 0x10
+nov 11 12:28:14 garuda kernel: CPU4 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 5 APIC 0x11
+nov 11 12:28:14 garuda kernel: CPU5 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 6 APIC 0x18
+nov 11 12:28:14 garuda kernel: CPU6 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 7 APIC 0x19
+nov 11 12:28:14 garuda kernel: CPU7 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 8 APIC 0x20
+nov 11 12:28:14 garuda kernel: CPU8 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 9 APIC 0x21
+nov 11 12:28:14 garuda kernel: CPU9 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 10 APIC 0x28
+nov 11 12:28:14 garuda kernel: CPU10 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 11 APIC 0x29
+nov 11 12:28:14 garuda kernel: CPU11 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 12 APIC 0x30
+nov 11 12:28:14 garuda kernel: core: cpu_atom PMU driver: PEBS-via-PT 
+nov 11 12:28:14 garuda kernel: ... version:                5
+nov 11 12:28:14 garuda kernel: ... bit width:              48
+nov 11 12:28:14 garuda kernel: ... generic registers:      6
+nov 11 12:28:14 garuda kernel: ... value mask:             0000ffffffffffff
+nov 11 12:28:14 garuda kernel: ... max period:             00007fffffffffff
+nov 11 12:28:14 garuda kernel: ... fixed-purpose events:   3
+nov 11 12:28:14 garuda kernel: ... event mask:             000000070000003f
+nov 11 12:28:14 garuda kernel: CPU12 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 13 APIC 0x32
+nov 11 12:28:14 garuda kernel: CPU13 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 14 APIC 0x34
+nov 11 12:28:14 garuda kernel: CPU14 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 15 APIC 0x36
+nov 11 12:28:14 garuda kernel: CPU15 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 16 APIC 0x38
+nov 11 12:28:14 garuda kernel: CPU16 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 17 APIC 0x3a
+nov 11 12:28:14 garuda kernel: CPU17 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 18 APIC 0x3c
+nov 11 12:28:14 garuda kernel: CPU18 is up
+nov 11 12:28:14 garuda kernel: smpboot: Booting Node 0 Processor 19 APIC 0x3e
+nov 11 12:28:14 garuda kernel: CPU19 is up
+nov 11 12:28:14 garuda kernel: ACPI: PM: Waking up from system sleep state S3
+nov 11 12:28:14 garuda kernel: ACPI: EC: interrupt unblocked
+nov 11 12:28:14 garuda kernel: ACPI: EC: event unblocked
+nov 11 12:28:14 garuda kernel: xhci_hcd 0000:00:14.0: xHC error in resume, USBSTS 0x411, Reinit
+nov 11 12:28:14 garuda kernel: usb usb1: root hub lost power or was reset
+nov 11 12:28:14 garuda kernel: usb usb2: root hub lost power or was reset
+nov 11 12:28:14 garuda kernel: [drm] PCIE GART of 512M enabled (table at 0x0000008001300000).
+nov 11 12:28:14 garuda kernel: [drm] PSP is resuming...
+nov 11 12:28:14 garuda kernel: nvme nvme0: 20/0/0 default/read/poll queues
+nov 11 12:28:14 garuda kernel: nvme nvme1: 20/0/0 default/read/poll queues
+nov 11 12:28:14 garuda kernel: nvme nvme2: 20/0/0 default/read/poll queues
+nov 11 12:28:14 garuda kernel: [drm] reserve 0xa00000 from 0x81fd000000 for PSP TMR
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: RAS: optional ras ta ucode is not available
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: SECUREDISPLAY: securedisplay ta ucode is not available
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: SMU is resuming...
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: smu driver if version = 0x0000000f, smu fw if version = 0x00000013, smu fw program = 0, version = 0x003b2f00 (59.47.0)
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: SMU driver if version not matched
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: use vbios provided pptable
+nov 11 12:28:14 garuda kernel: usb 1-7: reset full-speed USB device number 6 using xhci_hcd
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: SMU is resumed successfully!
+nov 11 12:28:14 garuda kernel: [drm] DMUB hardware initialized: version=0x02020020
+nov 11 12:28:14 garuda kernel: ata8: SATA link down (SStatus 4 SControl 300)
+nov 11 12:28:14 garuda kernel: ata8.00: Entering active power mode
+nov 11 12:28:14 garuda kernel: ata6: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+nov 11 12:28:14 garuda kernel: ata6.00: Entering active power mode
+nov 11 12:28:14 garuda kernel: ata5: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+nov 11 12:28:14 garuda kernel: ata5.00: Entering active power mode
+nov 11 12:28:14 garuda kernel: ata7: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+nov 11 12:28:14 garuda kernel: ata7.00: Entering active power mode
+nov 11 12:28:14 garuda kernel: ata6.00: configured for UDMA/133
+nov 11 12:28:14 garuda kernel: ata7.00: configured for UDMA/133
+nov 11 12:28:14 garuda kernel: ata5.00: configured for UDMA/133
+nov 11 12:28:14 garuda kernel: usb 1-2: reset high-speed USB device number 2 using xhci_hcd
+nov 11 12:28:14 garuda kernel: usb 1-5: reset high-speed USB device number 5 using xhci_hcd
+nov 11 12:28:14 garuda kernel: [drm] kiq ring mec 2 pipe 1 q 0
+nov 11 12:28:14 garuda kernel: [drm] VCN decode and encode initialized successfully(under DPG Mode).
+nov 11 12:28:14 garuda kernel: [drm] JPEG decode initialized successfully.
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 5 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 6 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 7 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 8 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 9 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 10 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring kiq_0.2.1.0 uses VM inv eng 11 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring sdma0 uses VM inv eng 12 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring sdma1 uses VM inv eng 13 on hub 0
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring vcn_dec_0 uses VM inv eng 0 on hub 8
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring vcn_enc_0.0 uses VM inv eng 1 on hub 8
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring vcn_enc_0.1 uses VM inv eng 4 on hub 8
+nov 11 12:28:14 garuda kernel: amdgpu 0000:03:00.0: amdgpu: ring jpeg_dec uses VM inv eng 5 on hub 8
+nov 11 12:28:14 garuda kernel: usb 1-4: reset full-speed USB device number 3 using xhci_hcd
+nov 11 12:28:14 garuda kernel: usb 2-9: reset SuperSpeed USB device number 2 using xhci_hcd
+nov 11 12:28:14 garuda kernel: usb 1-2.4: reset full-speed USB device number 4 using xhci_hcd
+nov 11 12:28:14 garuda kernel: pcieport 0000:00:1c.3: PCI bridge to [bus 08]
+nov 11 12:28:14 garuda kernel: pcieport 0000:00:1c.3:   bridge window [mem 0x85700000-0x858fffff]
+nov 11 12:28:14 garuda kernel: OOM killer enabled.
+nov 11 12:28:14 garuda kernel: Restarting tasks ... 
+nov 11 12:28:14 garuda kernel: pcieport 0000:00:1d.4: PCI bridge to [bus 0a]
+nov 11 12:28:14 garuda kernel: pcieport 0000:00:1d.4:   bridge window [mem 0x85900000-0x859fffff]
+nov 11 12:28:14 garuda kernel: pcieport 0000:00:1a.0: PCI bridge to [bus 05]
+nov 11 12:28:14 garuda kernel: pcieport 0000:00:1a.0:   bridge window [mem 0x85a00000-0x85afffff]
+nov 11 12:28:14 garuda kernel: done.
+nov 11 12:28:14 garuda kernel: random: crng reseeded on system resumption
+nov 11 12:28:14 garuda kernel: PM: suspend exit
+nov 11 12:28:14 garuda systemd[1]: Starting Update locate database...
+nov 11 12:28:14 garuda systemd-sleep[118085]: System returned from sleep state.
+nov 11 12:28:14 garuda systemd[1]: systemd-suspend.service: Deactivated successfully.
+nov 11 12:28:14 garuda systemd[1]: Finished System Suspend.
+nov 11 12:28:14 garuda systemd[1]: Stopped target Sleep.
+nov 11 12:28:14 garuda systemd[1]: Reached target Suspend.
+nov 11 12:28:14 garuda systemd[1]: Stopped target Suspend.
+nov 11 12:28:14 garuda systemd-logind[875]: Operation 'sleep' finished.
+nov 11 12:28:14 garuda ModemManager[952]: <msg> [sleep-monitor-systemd] system is resuming
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8218] manager: sleep: wake requested (sleeping: yes  enabled: yes)
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8219] device (enp8s0): state change: activated -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8222] dhcp4 (enp8s0): canceled DHCP transaction
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8222] dhcp4 (enp8s0): activation: beginning transaction (timeout in 45 seconds)
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8222] dhcp4 (enp8s0): state changed no lease
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8223] dhcp6 (enp8s0): canceled DHCP transaction
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8223] dhcp6 (enp8s0): activation: beginning transaction (timeout in 45 seconds)
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.8223] dhcp6 (enp8s0): state changed no lease
+nov 11 12:28:14 garuda avahi-daemon[868]: Withdrawing address record for 192.168.1.14 on enp8s0.
+nov 11 12:28:14 garuda avahi-daemon[868]: Leaving mDNS multicast group on interface enp8s0.IPv4 with address 192.168.1.14.
+nov 11 12:28:14 garuda avahi-daemon[868]: Interface enp8s0.IPv4 no longer relevant for mDNS.
+nov 11 12:28:14 garuda avahi-daemon[868]: Withdrawing address record for 2806:266:483:874f:f4b1:8e4e:13b:5f0d on enp8s0.
+nov 11 12:28:14 garuda avahi-daemon[868]: Leaving mDNS multicast group on interface enp8s0.IPv6 with address 2806:266:483:874f:f4b1:8e4e:13b:5f0d.
+nov 11 12:28:14 garuda avahi-daemon[868]: Joining mDNS multicast group on interface enp8s0.IPv6 with address fe80::e772:9ed0:9893:6f08.
+nov 11 12:28:14 garuda avahi-daemon[868]: Registering new address record for fe80::e772:9ed0:9893:6f08 on enp8s0.*.
+nov 11 12:28:14 garuda avahi-daemon[868]: Withdrawing address record for fe80::e772:9ed0:9893:6f08 on enp8s0.
+nov 11 12:28:14 garuda avahi-daemon[868]: Leaving mDNS multicast group on interface enp8s0.IPv6 with address fe80::e772:9ed0:9893:6f08.
+nov 11 12:28:14 garuda avahi-daemon[868]: Interface enp8s0.IPv6 no longer relevant for mDNS.
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.9021] manager: NetworkManager state is now CONNECTED_GLOBAL
+nov 11 12:28:14 garuda sudo[118273]:      n30 : a password is required ; TTY=pts/3 ; PWD=/home/n30/.dotfiles ; USER=root ; COMMAND=/usr/bin/true
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.9476] manager: NetworkManager state is now DISCONNECTED
+nov 11 12:28:14 garuda NetworkManager[910]: <info>  [1699727294.9480] device (enp8s0): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+nov 11 12:28:14 garuda dbus-daemon[869]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.4' (uid=0 pid=910 comm="/usr/bin/NetworkManager --no-daemon")
+nov 11 12:28:15 garuda systemd[1]: Starting Network Manager Script Dispatcher Service...
+nov 11 12:28:15 garuda dbus-daemon[869]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+nov 11 12:28:15 garuda systemd[1]: Started Network Manager Script Dispatcher Service.
+nov 11 12:28:17 garuda ntpd[976]: Deleting interface #4 enp8s0, 192.168.1.14#123, interface stats: received=161, sent=161, dropped=0, active_time=16719 secs
+nov 11 12:28:17 garuda ntpd[976]: 45.231.168.6 local addr 192.168.1.14 -> <null>
+nov 11 12:28:17 garuda ntpd[976]: 192.36.143.130 local addr 192.168.1.14 -> <null>
+nov 11 12:28:17 garuda ntpd[976]: Deleting interface #5 enp8s0, 2806:266:483:874f:f4b1:8e4e:13b:5f0d#123, interface stats: received=80, sent=80, dropped=0, active_time=16719 secs
+nov 11 12:28:17 garuda ntpd[976]: 2a03:8600::aa local addr 2806:266:483:874f:f4b1:8e4e:13b:5f0d -> <null>
+nov 11 12:28:17 garuda ntpd[976]: Deleting interface #6 enp8s0, fe80::e772:9ed0:9893:6f08%2#123, interface stats: received=0, sent=0, dropped=0, active_time=16719 secs
+nov 11 12:28:18 garuda ModemManager[952]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:1c.3/0000:08:00.0': not supported by any plugin
+nov 11 12:28:19 garuda kernel: igc 0000:08:00.0 enp8s0: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+nov 11 12:28:19 garuda NetworkManager[910]: <info>  [1699727299.9993] device (enp8s0): carrier: link connected
+nov 11 12:28:19 garuda NetworkManager[910]: <info>  [1699727299.9994] device (enp8s0): state change: unavailable -> disconnected (reason 'carrier-changed', sys-iface-state: 'managed')
+nov 11 12:28:19 garuda NetworkManager[910]: <info>  [1699727299.9999] policy: auto-activating connection 'Wired connection 1' (a3a9cbc8-9cbc-3ec9-a77f-55a9c5b91c95)
+nov 11 12:28:20 garuda NetworkManager[910]: <info>  [1699727300.0001] device (enp8s0): Activation: starting connection 'Wired connection 1' (a3a9cbc8-9cbc-3ec9-a77f-55a9c5b91c95)
+nov 11 12:28:20 garuda NetworkManager[910]: <info>  [1699727300.0001] device (enp8s0): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+nov 11 12:28:20 garuda NetworkManager[910]: <info>  [1699727300.0002] manager: NetworkManager state is now CONNECTING
+nov 11 12:28:20 garuda NetworkManager[910]: <info>  [1699727300.0002] device (enp8s0): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+nov 11 12:28:20 garuda NetworkManager[910]: <info>  [1699727300.0005] device (enp8s0): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+nov 11 12:28:20 garuda NetworkManager[910]: <info>  [1699727300.0009] dhcp4 (enp8s0): activation: beginning transaction (timeout in 45 seconds)
+nov 11 12:28:20 garuda avahi-daemon[868]: Joining mDNS multicast group on interface enp8s0.IPv6 with address fe80::e772:9ed0:9893:6f08.
+nov 11 12:28:20 garuda avahi-daemon[868]: New relevant interface enp8s0.IPv6 for mDNS.
+nov 11 12:28:20 garuda avahi-daemon[868]: Registering new address record for fe80::e772:9ed0:9893:6f08 on enp8s0.*.
+nov 11 12:28:20 garuda systemd[1]: updatedb.service: Deactivated successfully.
+nov 11 12:28:20 garuda systemd[1]: Finished Update locate database.
+nov 11 12:28:20 garuda systemd[1]: updatedb.service: Consumed 1.938s CPU time.
+nov 11 12:28:21 garuda NetworkManager[910]: <info>  [1699727301.6827] dhcp6 (enp8s0): activation: beginning transaction (timeout in 45 seconds)
+nov 11 12:28:21 garuda NetworkManager[910]: <info>  [1699727301.6837] policy: set 'Wired connection 1' (enp8s0) as default for IPv6 routing and DNS
+nov 11 12:28:21 garuda avahi-daemon[868]: Leaving mDNS multicast group on interface enp8s0.IPv6 with address fe80::e772:9ed0:9893:6f08.
+nov 11 12:28:21 garuda avahi-daemon[868]: Joining mDNS multicast group on interface enp8s0.IPv6 with address 2806:266:483:874f:f4b1:8e4e:13b:5f0d.
+nov 11 12:28:21 garuda NetworkManager[910]: <info>  [1699727301.6883] dhcp6 (enp8s0): state changed new lease
+nov 11 12:28:21 garuda avahi-daemon[868]: Registering new address record for 2806:266:483:874f:f4b1:8e4e:13b:5f0d on enp8s0.*.
+nov 11 12:28:21 garuda avahi-daemon[868]: Withdrawing address record for fe80::e772:9ed0:9893:6f08 on enp8s0.
+nov 11 12:28:23 garuda NetworkManager[910]: <info>  [1699727303.1679] device (enp8s0): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+nov 11 12:28:23 garuda NetworkManager[910]: <info>  [1699727303.1933] device (enp8s0): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+nov 11 12:28:23 garuda NetworkManager[910]: <info>  [1699727303.1936] device (enp8s0): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+nov 11 12:28:23 garuda NetworkManager[910]: <info>  [1699727303.1940] manager: NetworkManager state is now CONNECTED_SITE
+nov 11 12:28:23 garuda NetworkManager[910]: <info>  [1699727303.1944] device (enp8s0): Activation: successful, device activated.
+nov 11 12:28:23 garuda NetworkManager[910]: <info>  [1699727303.6329] manager: NetworkManager state is now CONNECTED_GLOBAL
+nov 11 12:28:23 garuda kernel: ata8.00: qc timeout after 10000 msecs (cmd 0x40)
+nov 11 12:28:23 garuda kernel: ata8.00: VERIFY failed (err_mask=0x4)
+nov 11 12:28:24 garuda kernel: ata8: SATA link down (SStatus 4 SControl 300)
+nov 11 12:28:24 garuda kernel: ata8: limiting SATA link speed to <unknown>
+nov 11 12:28:24 garuda NetworkManager[910]: <info>  [1699727304.1414] dhcp4 (enp8s0): state changed new lease, address=192.168.1.14
+nov 11 12:28:24 garuda NetworkManager[910]: <info>  [1699727304.1419] policy: set 'Wired connection 1' (enp8s0) as default for IPv4 routing and DNS
+nov 11 12:28:24 garuda avahi-daemon[868]: Joining mDNS multicast group on interface enp8s0.IPv4 with address 192.168.1.14.
+nov 11 12:28:24 garuda avahi-daemon[868]: New relevant interface enp8s0.IPv4 for mDNS.
+nov 11 12:28:24 garuda avahi-daemon[868]: Registering new address record for 192.168.1.14 on enp8s0.IPv4.
+nov 11 12:28:28 garuda ntpd[976]: Listen normally on 7 enp8s0 192.168.1.14:123
+nov 11 12:28:28 garuda ntpd[976]: Listen normally on 8 enp8s0 [2806:266:483:874f:f4b1:8e4e:13b:5f0d]:123
+nov 11 12:28:28 garuda ntpd[976]: Listen normally on 9 enp8s0 [fe80::e772:9ed0:9893:6f08%2]:123
+nov 11 12:28:28 garuda ntpd[976]: new interface(s) found: waking up resolver
+nov 11 12:28:29 garuda kernel: ata8: SATA link down (SStatus 4 SControl 3F0)
+nov 11 12:28:29 garuda kernel: ata8.00: disable device
+nov 11 12:28:29 garuda kernel: ata8.00: detaching (SCSI 7:0:0:0)
+nov 11 12:28:29 garuda kernel: sd 7:0:0:0: [sdd] Synchronizing SCSI cache
+nov 11 12:28:29 garuda kernel: sd 7:0:0:0: [sdd] Synchronize Cache(10) failed: Result: hostbyte=DID_BAD_TARGET driverbyte=DRIVER_OK
+nov 11 12:28:29 garuda dbus-daemon[1426]: [session uid=1000 pid=1426] Activating service name='org.kde.kded5' requested by ':1.1584' (uid=1000 pid=119282 comm="/usr/lib/kf5/kioslave5 /usr/lib/qt/plugins/kf5/kio")
+nov 11 12:28:29 garuda kded5[119288]: qt.qpa.xcb: could not connect to display
+nov 11 12:28:29 garuda kded5[119288]: qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+nov 11 12:28:29 garuda kded5[119288]: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+                                      
+                                      Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, wayland-egl, wayland, wayland-xcomposite-egl, wayland-xcomposite-glx, xcb.
+nov 11 12:28:29 garuda systemd[1]: Started Process Core Dump (PID 119290/UID 0).
+nov 11 12:28:29 garuda systemd-coredump[119293]: Process 119288 (kded5) of user 1000 dumped core.
+                                                 
+                                                 Stack trace of thread 119288:
+                                                 #0  0x00007ff3b74ac83c n/a (libc.so.6 + 0x8e83c)
+                                                 #1  0x00007ff3b745c668 raise (libc.so.6 + 0x3e668)
+                                                 #2  0x00007ff3b74444b8 abort (libc.so.6 + 0x264b8)
+                                                 #3  0x00007ff3b7aa00c2 _ZNK14QMessageLogger5fatalEPKcz (libQt5Core.so.5 + 0xa00c2)
+                                                 #4  0x00007ff3b813f402 _ZN22QGuiApplicationPrivate25createPlatformIntegrationEv (libQt5Gui.so.5 + 0x13f402)
+                                                 #5  0x00007ff3b813fa79 _ZN22QGuiApplicationPrivate21createEventDispatcherEv (libQt5Gui.so.5 + 0x13fa79)
+                                                 #6  0x00007ff3b7c9bc05 _ZN23QCoreApplicationPrivate4initEv (libQt5Core.so.5 + 0x29bc05)
+                                                 #7  0x00007ff3b813fb26 _ZN22QGuiApplicationPrivate4initEv (libQt5Gui.so.5 + 0x13fb26)
+                                                 #8  0x00007ff3b8b75b9e _ZN19QApplicationPrivate4initEv (libQt5Widgets.so.5 + 0x175b9e)
+                                                 #9  0x00005623a7a43c7e n/a (kded5 + 0x6c7e)
+                                                 #10 0x00007ff3b7445cd0 n/a (libc.so.6 + 0x27cd0)
+                                                 #11 0x00007ff3b7445d8a __libc_start_main (libc.so.6 + 0x27d8a)
+                                                 #12 0x00005623a7a440b5 n/a (kded5 + 0x70b5)
+                                                 
+                                                 Stack trace of thread 119289:
+                                                 #0  0x00007ff3b880c438 n/a (libQt5DBus.so.5 + 0x2b438)
+                                                 #1  0x00007ff3b73e1cd0 n/a (libdbus-1.so.3 + 0x14cd0)
+                                                 #2  0x00007ff3b73e63ce dbus_connection_dispatch (libdbus-1.so.3 + 0x193ce)
+                                                 #3  0x00007ff3b880b322 n/a (libQt5DBus.so.5 + 0x2a322)
+                                                 #4  0x00007ff3b880b761 n/a (libQt5DBus.so.5 + 0x2a761)
+                                                 #5  0x00007ff3b7cd1097 n/a (libQt5Core.so.5 + 0x2d1097)
+                                                 #6  0x00007ff3b7cd2894 _ZN15QSocketNotifier9activatedE17QSocketDescriptorNS_4TypeENS_14QPrivateSignalE (libQt5Core.so.5 + 0x2d2894)
+                                                 #7  0x00007ff3b7cd29d8 _ZN15QSocketNotifier5eventEP6QEvent (libQt5Core.so.5 + 0x2d29d8)
+                                                 #8  0x00007ff3b7c9c14c _ZN16QCoreApplication15notifyInternal2EP7QObjectP6QEvent (libQt5Core.so.5 + 0x29c14c)
+                                                 #9  0x00007ff3b7ce9cd6 n/a (libQt5Core.so.5 + 0x2e9cd6)
+                                                 #10 0x00007ff3b6b0df69 n/a (libglib-2.0.so.0 + 0x59f69)
+                                                 #11 0x00007ff3b6b6c327 n/a (libglib-2.0.so.0 + 0xb8327)
+                                                 #12 0x00007ff3b6b0c162 g_main_context_iteration (libglib-2.0.so.0 + 0x58162)
+                                                 #13 0x00007ff3b7ceaf7c _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt5Core.so.5 + 0x2eaf7c)
+                                                 #14 0x00007ff3b7c9ae74 _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt5Core.so.5 + 0x29ae74)
+                                                 #15 0x00007ff3b7af74f6 _ZN7QThread4execEv (libQt5Core.so.5 + 0xf74f6)
+                                                 #16 0x00007ff3b87f9a9a n/a (libQt5DBus.so.5 + 0x18a9a)
+                                                 #17 0x00007ff3b7af371a n/a (libQt5Core.so.5 + 0xf371a)
+                                                 #18 0x00007ff3b74aa9eb n/a (libc.so.6 + 0x8c9eb)
+                                                 #19 0x00007ff3b752e7cc n/a (libc.so.6 + 0x1107cc)
+                                                 ELF object binary architecture: AMD x86-64
+nov 11 12:28:29 garuda systemd[1]: systemd-coredump@21-119290-0.service: Deactivated successfully.
+nov 11 12:28:29 garuda dbus-daemon[1426]: [session uid=1000 pid=1426] Activated service 'org.kde.kded5' failed: Process org.kde.kded5 received signal 6
+nov 11 12:28:29 garuda dbus-daemon[1426]: [session uid=1000 pid=1426] Activating service name='org.kde.kded5' requested by ':1.1585' (uid=1000 pid=119284 comm="/usr/lib/kf5/kioslave5 /usr/lib/qt/plugins/kf5/kio")
+nov 11 12:28:29 garuda kded5[119303]: qt.qpa.xcb: could not connect to display
+nov 11 12:28:29 garuda kded5[119303]: qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+nov 11 12:28:29 garuda kded5[119303]: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+                                      
+                                      Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, wayland-egl, wayland, wayland-xcomposite-egl, wayland-xcomposite-glx, xcb.
+nov 11 12:28:29 garuda systemd[1]: Started Process Core Dump (PID 119305/UID 0).
+nov 11 12:28:29 garuda systemd-coredump[119313]: Process 119303 (kded5) of user 1000 dumped core.
+                                                 
+                                                 Stack trace of thread 119303:
+                                                 #0  0x00007fdbbc0ac83c n/a (libc.so.6 + 0x8e83c)
+                                                 #1  0x00007fdbbc05c668 raise (libc.so.6 + 0x3e668)
+                                                 #2  0x00007fdbbc0444b8 abort (libc.so.6 + 0x264b8)
+                                                 #3  0x00007fdbbc6a00c2 _ZNK14QMessageLogger5fatalEPKcz (libQt5Core.so.5 + 0xa00c2)
+                                                 #4  0x00007fdbbcd3f402 _ZN22QGuiApplicationPrivate25createPlatformIntegrationEv (libQt5Gui.so.5 + 0x13f402)
+                                                 #5  0x00007fdbbcd3fa79 _ZN22QGuiApplicationPrivate21createEventDispatcherEv (libQt5Gui.so.5 + 0x13fa79)
+                                                 #6  0x00007fdbbc89bc05 _ZN23QCoreApplicationPrivate4initEv (libQt5Core.so.5 + 0x29bc05)
+                                                 #7  0x00007fdbbcd3fb26 _ZN22QGuiApplicationPrivate4initEv (libQt5Gui.so.5 + 0x13fb26)
+                                                 #8  0x00007fdbbd575b9e _ZN19QApplicationPrivate4initEv (libQt5Widgets.so.5 + 0x175b9e)
+                                                 #9  0x0000559e78851c7e n/a (kded5 + 0x6c7e)
+                                                 #10 0x00007fdbbc045cd0 n/a (libc.so.6 + 0x27cd0)
+                                                 #11 0x00007fdbbc045d8a __libc_start_main (libc.so.6 + 0x27d8a)
+                                                 #12 0x0000559e788520b5 n/a (kded5 + 0x70b5)
+                                                 
+                                                 Stack trace of thread 119304:
+                                                 #0  0x00007fdbbc120f6f __poll (libc.so.6 + 0x102f6f)
+                                                 #1  0x00007fdbbb36c276 n/a (libglib-2.0.so.0 + 0xb8276)
+                                                 #2  0x00007fdbbb30c162 g_main_context_iteration (libglib-2.0.so.0 + 0x58162)
+                                                 #3  0x00007fdbbc8eaf7c _ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE (libQt5Core.so.5 + 0x2eaf7c)
+                                                 #4  0x00007fdbbc89ae74 _ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE (libQt5Core.so.5 + 0x29ae74)
+                                                 #5  0x00007fdbbc6f74f6 _ZN7QThread4execEv (libQt5Core.so.5 + 0xf74f6)
+                                                 #6  0x00007fdbbd2e0a9a n/a (libQt5DBus.so.5 + 0x18a9a)
+                                                 #7  0x00007fdbbc6f371a n/a (libQt5Core.so.5 + 0xf371a)
+                                                 #8  0x00007fdbbc0aa9eb n/a (libc.so.6 + 0x8c9eb)
+                                                 #9  0x00007fdbbc12e7cc n/a (libc.so.6 + 0x1107cc)
+                                                 ELF object binary architecture: AMD x86-64
+nov 11 12:28:29 garuda systemd[1]: systemd-coredump@22-119305-0.service: Deactivated successfully.
+nov 11 12:28:29 garuda dbus-daemon[1426]: [session uid=1000 pid=1426] Activated service 'org.kde.kded5' failed: Process org.kde.kded5 received signal 6
+nov 11 12:28:34 garuda systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
