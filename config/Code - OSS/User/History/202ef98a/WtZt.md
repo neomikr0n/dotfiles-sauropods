@@ -1,5 +1,5 @@
-# sauropods theme 🦕 🦕💚
-My **[Hyprland](https://github.com/topics/hyprland) dotfiles** on [Garuda](https://garudalinux.org/) (arch btw), Linux.
+# sauropod's dotfiles 🦕 🦕💚
+My **Hyprland dotfiles** on [Garuda](https://garudalinux.org/) (arch btw), Linux.
 
 ***waybar***
 ![lol](https://0x0.st/HwJv.png)
@@ -144,7 +144,7 @@ My **[Hyprland](https://github.com/topics/hyprland) dotfiles** on [Garuda](https
 - $picsDir = ~/Pictures/
 - $configDir = ~/.config/hypr/configs/
 - $files = dolphin
-- $browser = brave
+- $browser = firedragon
 - $music = spotify
 - $term = foot
 - $menu = $scriptsDir/menu

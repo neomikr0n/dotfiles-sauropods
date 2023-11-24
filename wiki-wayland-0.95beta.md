@@ -5055,9 +5055,6 @@ https://0x0.st/HwJO.png
 - ## [tealdeer](https://github.com/dbrgn/tealdeer): 
 A very fast implementation of tldr in Rust: Simplified, example based and community-driven man pages.
 
-
-
-
 - ## [tldr](https://github.com/tldr-pages/tldr): 
   collection of community-maintained help pages for command-line tools, that aims to be a simpler, more approachable complement to traditional man pages.
 
