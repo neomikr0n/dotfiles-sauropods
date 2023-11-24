@@ -741,3 +741,166 @@
 [Debug 23:08:27.763] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
 [Trace 23:08:27.858] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 56
 [Trace 23:08:28.835] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/dJyL.md
+[Trace 23:08:54.472] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:08:54.472] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:08:54.586] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:08:54.586] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:08:54.674] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:08:54.780] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 58
+[Debug 23:08:54.780] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:08:54.831] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:08:54.931] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 58
+[Trace 23:08:55.901] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/yVNE.md
+[Trace 23:09:01.909] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:01.909] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:02.093] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 59
+[Debug 23:09:02.093] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.115] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:02.153] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.261] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.261] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:02.443] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 60
+[Debug 23:09:02.443] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.470] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:09:02.493] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.493] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.580] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.580] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.694] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:09:02.736] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.736] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:02.926] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 63
+[Debug 23:09:02.926] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:02.953] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:02.980] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.076] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 63
+[Trace 23:09:03.213] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.213] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.373] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.373] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.415] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:09:03.558] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.558] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.707] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.707] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:03.760] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:03.900] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 67
+[Debug 23:09:03.900] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:09:03.954] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:04.062] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:04.062] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:04.244] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 68
+[Debug 23:09:04.244] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:04.263] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:04.299] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:04.395] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 68
+[Trace 23:09:05.368] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/yVNE.md
+[Trace 23:09:17.935] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:17.935] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:18.131] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 69
+[Debug 23:09:18.132] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:18.142] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:18.182] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:18.280] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 69
+[Trace 23:09:18.457] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:18.457] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:18.644] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 70
+[Debug 23:09:18.644] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:18.670] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:09:18.794] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 70
+[Debug 23:09:18.794] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:19.770] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/fDbH.md
+[Trace 23:09:28.868] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:28.868] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:29.056] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 71
+[Debug 23:09:29.056] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:29.081] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:29.114] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:29.206] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 71
+[Trace 23:09:29.397] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:29.397] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:29.582] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 72
+[Debug 23:09:29.582] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:29.601] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:09:29.733] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 72
+[Debug 23:09:29.733] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:30.705] VsCodeClientWorkspace: onDidChangeWatchedFiles: 1: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/v7N0.md
+[Trace 23:09:35.382] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:35.383] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:35.538] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:35.538] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:35.584] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:35.732] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 74
+[Debug 23:09:35.732] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:09:35.786] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:35.882] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 74
+[Trace 23:09:35.946] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:35.946] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.147] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:09:36.153] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.154] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.264] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.264] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.354] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:09:36.474] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.474] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.588] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.588] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.676] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:36.777] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 79
+[Debug 23:09:36.777] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:09:36.832] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:36.927] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 79
+[Trace 23:09:37.115] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:37.115] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:37.196] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:37.197] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:37.315] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:37.383] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 81
+[Debug 23:09:37.383] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:09:37.434] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:37.533] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 81
+[Trace 23:09:38.507] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/v7N0.md
+[Trace 23:09:39.441] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:39.441] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:39.625] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 82
+[Debug 23:09:39.625] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:39.655] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:39.684] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:39.775] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 82
+[Trace 23:09:40.745] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/v7N0.md
+[Trace 23:09:42.251] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:42.251] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:42.388] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:42.388] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:42.452] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:42.582] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 84
+[Debug 23:09:42.582] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:09:42.636] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:42.732] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 84
+[Trace 23:09:42.996] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:42.996] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:43.194] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 85
+[Debug 23:09:43.194] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:43.225] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:43.249] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:43.344] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 85
+[Trace 23:09:44.314] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/v7N0.md
+[Trace 23:09:47.944] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:47.944] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:48.130] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:48.130] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:48.148] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:48.312] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 87
+[Debug 23:09:48.312] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:09:48.367] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:48.463] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 87
+[Trace 23:09:49.226] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:09:49.227] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:09:49.409] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 88
+[Debug 23:09:49.409] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:49.431] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/v7N0.md
+[Trace 23:09:49.431] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Debug 23:09:49.465] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:09:49.559] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 88
+[Trace 23:09:50.532] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/History/202ef98a/v7N0.md

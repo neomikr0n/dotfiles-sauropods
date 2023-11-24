@@ -1,4 +1,4 @@
-# sauropod's dotfiles 🦕 🦕💚
+# dotfiles 👻💟
 My **Hyprland dotfiles** on (Garuda)[https://garudalinux.org/], (arch btw), Linux.
 
 ***waybar***
