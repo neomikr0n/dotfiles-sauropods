@@ -5984,16 +5984,6 @@ i'                                 nor changes'
 
 
 ---
-HSBC
-https://www.hsbc.com.mx/tarjetas-de-credito/condiciones-generales/
-
-Hay que tomar en cuenta que HSBC es de los peores bancos en cuanto a atención a clientes, la app seguido falla, al igual que su sistema en general, para todo te mandan a la sucursal, en fin sino tuvieran buenas promos ni siquiera lo hubiera tomado en cuenta. Un consejo para los que la piensen solicitar, es que sí les ofrecen la air, tomenla e inmediatamente después de activarla, llamen para realizar el cambio de producto, casi siempre te ofrecerán la 2now y la zero. En este banco mientras más línea mejor porque por casi todas las compras en línea te realizan cargos doble y sí quieres ocupar el resto de tu línea tienes que esperar minimo 3 días a que se libere.
-
-Hola soy Luis y puedo dar mi experiencia con la targeta hey banco y si puedo aprovechar el 2%  usando la billetera de Google y pagando con el móvil casi no uso la tarjeta ficica todo por contacto
-
-Para llegar a los 2,500, domicilie mi PPR (Plan Para el Retiro), entonces sin pedos cumplo la cuota mensual
-
----
 # linux-wallpaperengine-wayland-git
 
 ## install
