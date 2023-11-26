@@ -37,24 +37,23 @@ cli-visualizer cava glava foot kitty the_silver_searcher
 
 # **[Crashes and Bugs](https://wiki.hyprland.org/Crashes-and-Bugs/)**
 
-## [Getting the log](https://wiki.hyprland.org/Crashes-and-Bugs/#getting-the-log "Anchor to: Getting the log")
+## [Getting the log](https://wiki.hyprland.org/Crashes-and-Bugs/#getting-the-log)
 
-## journalctl
+* ## journalctl
 journalctl > ~/Documents/journalctl_(date +%Y-%m-%d_%H%M).log
 
-## hyprland.log
+* ## hyprland.log
 
-on hyprland.conf:
+on `hyprland.conf`:
+```
 env= HYPRLAND_LOG_WLR,1
+```
 
-or in an script:
-export HYPRLAND_LOG_WLR=1
-
-If you are in a TTY, and the hyprland session that crashed was the last one you launched, the log will be printed with:
-- zsh?:
+in a TTY, and the hyprland session that crashed was the last one you launched, the log will be printed with:
+<!-- - zsh?:
 ```sh
 cat /tmp/hypr/$(ls -t /tmp/hypr/ | head -n 1)/hyprland.log > ~/Documents/hyprland_(date +%Y-%m-%d_%H%M).log
-```
+``` -->
 - fish:
 ```sh
 cat /tmp/hypr/$(eza -t /tmp/hypr/ | head -n 1)/hyprland.log > ~/Documents/hyprland_(date +%Y-%m-%d_%H%M).log
@@ -66,7 +65,7 @@ if you are in a Hyprland session, and you want the log of the last session, use
 cat /tmp/hypr/$(eza -t /tmp/hypr/ | head -n 1 | tail -n 1)/hyprland.log > ~/Documents/hyprland_(date +%Y-%m-%d_%H%M).log
 ```
 
-## [Crashes at launch](https://wiki.hyprland.org/Crashes-and-Bugs/#crashes-at-launch "Anchor to: Crashes at launch")
+* ## [Crashes at launch](https://wiki.hyprland.org/Crashes-and-Bugs/#crashes-at-launch "Anchor to: Crashes at launch")
 
 Diagnose the issue by what is in the log:
 
@@ -77,15 +76,9 @@ Diagnose the issue by what is in the log:
 - failing on `wlr-xxx` -> try compiling with `make legacyrenderer`, if that doesn’t help, report an issue, and also refer to the TTY wlr logs in RED like in the first point.
 - failing on `Hyprland` -> report an issue.
 
-## [Crashes not at launch](https://wiki.hyprland.org/Crashes-and-Bugs/#crashes-not-at-launch "Anchor to: Crashes not at launch")
-
-Report an issue on GitHub or on the Discord server.
-
-## [Bugs](https://wiki.hyprland.org/Crashes-and-Bugs/#bugs "Anchor to: Bugs")
+* ## [Bugs](https://wiki.hyprland.org/Crashes-and-Bugs/#bugs "Anchor to: Bugs")
 
 First of all, **_READ THE [FAQ PAGE](https://wiki.hyprland.org/FAQ)_**
-
-If your bug is not listed there, you can ask on the Discord server or open an issue on GitHub.
 
 
 
@@ -1359,7 +1352,7 @@ n30:x:1001:
 # AMD
 
 
-Dealing with display
+## Dealing with display
 check if the kernel headers are compiled.
 
 modinfo -F version amdgpu
@@ -1367,7 +1360,7 @@ modinfo -F version amdgpu
 ## which session? wayland or xorg11?
 echo $XDG_SESSION_TYPE
 
-#check wich is running:
+## check wich is running:
 lspci -nnk | grep -iA2 vga
 
 #Checking if is already on (should'nt be)-->
@@ -1653,19 +1646,6 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 shutdown -r now
 
 Reboot your system. You should have more controls when you select Advanced as Performance mode.
-
-> # **[mangohud](https://github.com/flightlessmango/MangoHud)**
-A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
-
-`
-sudo pacman -S mangohud lib32-mangohud goverlay-git
-`
-
-## use it:
-mangohud /path/to/app
-
-## steam launch options
-mangohud %command%
 
 
 > # **[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher)**
@@ -2470,6 +2450,17 @@ Shift + W	Increase the picture cropping for the currently playing media.
 W	Decrease the picture cropping for the currently playing media.
 V	Either display or hide subtitles for the currently playing media.
 J	Select the next subtitle file available.
+
+## These settings make the subtitle style nearly identical to Crunchyroll's subtitle style.
+https://www.reddit.com/r/mpv/comments/17r703j/please_give_me_config_to_make_subtitles_like_this/
+> mpv.conf file
+```
+sub-border-size = 3
+sub-font='Trebuchet MS'
+sub-shadow-offset = 2
+sub-shadow-color = 0.0/0.0/0.0
+```
+
 
 > # [Brave]() (from Microsoft)
 brave://flags/#enable-system-notifications
@@ -3477,12 +3468,40 @@ Fractal is a Matrix client written in GTK4. Much like Discord, Element is known 
 })();
 ```
 > # `STEAM`
-
 ---
 
 Settings -> Compatibility -> Enable Steam Play for all other titles
 
-## Lutris
+
+> # **[mangohud](https://github.com/flightlessmango/MangoHud)**
+A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more.
+
+`
+yay -S --needed mangohud-git lib32-mangohud goverlay-git
+`
+
+## use it:
+mangohud /path/to/app
+
+## steam launch options
+mangohud %command%
+
+
+> # **[Wine Dependency Hell Solver](https://github.com/FanderWasTaken/wine-dependency-hell-solver)**
+This is a script that functions similarly to how Valve's installscript.vdf does. It installs dependencies for games to work properly. However, not every game comes with all the required dependencies. So I decided to write a universal script to install every single dependency any game may require to work.
+
+- Let's download it:
+```
+curl -fsSL https://raw.githubusercontent.com/Fand
+erWasTaken/wine-dependency-hell-solver/main/WDHS.sh | bas
+h
+```
+- Then just execute it:
+```
+wine /home/n30/WDHS/WDHS.bat
+```
+
+## `Lutris`
 
 [InstallingDrivers](https://github.com/lutris/docs/blob/master/InstallingDrivers.md)
 
@@ -3500,12 +3519,29 @@ sudo pacman -S --needed lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-
 >>>
 >>
 
+
+extra/libieee1284            0.2.11-15         0.12 MiB       0.06 MiB
+extra/liburing               2.4-1             0.30 MiB               
+extra/mingw-w64-binutils     2.38-3           36.57 MiB       4.15 MiB
+extra/mingw-w64-crt          10.0.0-1        150.51 MiB       5.79 MiB
+extra/mingw-w64-gcc          12.2.0-1        935.65 MiB     211.20 MiB
+extra/mingw-w64-headers      10.0.0-1        118.16 MiB       9.91 MiB
+extra/mingw-w64-winpthreads  10.0.0-1          1.71 MiB       0.20 MiB
+extra/net-snmp               5.9.1-8           8.56 MiB       2.01 MiB
+extra/opencl-headers         2:2023.04.17-2    0.37 MiB       0.05 MiB
+extra/samba                  4.19.2-1         61.34 MiB       8.41 MiB
+extra/sane                   1.2.1-5          18.29 MiB       3.70 MiB
+
+Total Download Size:    245.48 MiB
+Total Installed Size:  1331.59 MiB
+
+:: Proceed with installation? [Y/n] 
+
 # GameMode
 
 # https://github.com/FeralInteractive/gamemode
 
-pacman -S meson systemd git dbus libinih
-yay -S gamemode
+yay -S --needed gamemode meson systemd git dbus libinih
 
 # test it
 
@@ -3537,7 +3573,11 @@ pnpm tauri build
 Heroic is an Open Source GOG and Epic games launcher 
 ![.](https://heroicgameslauncher.com/_next/static/images/heroic_01-4864abe462a3555732f717d23f3fbfde.png.webp)
 
-## [Setup Guide - Arch](https://github.com/jc141x/jc141-bash/blob/314ecb06df3edac7acbe01be07372a6be18a0eca/setup/arch.md)
+
+
+
+> ## [jc141 Setup Guide](https://gitlab.com/jc141x/setup)
+#### [OLD Setup Guide - Arch](https://github.com/jc141x/jc141-bash/blob/314ecb06df3edac7acbe01be07372a6be18a0eca/setup/arch.md)
 
 ###  1. add rumpowered repo and multilib
 
@@ -3559,55 +3599,54 @@ garuda-update
 
 - Make sure you do not have amdvlk (having it installed will cause a lot of issues):
 ```
-sudo pacman -R amdvlk
+yay -R amdvlk
 ```
 
 ## 2. Add required core packages
 
 - These packages are all required for our releases to work, if you dont have them the games will not run.
 ```
-sudo pacman -S --needed rumpowered/dwarfs fuse-overlayfs wine-staging wine-mono openssl-1.1
+yay -S --needed rumpowered/dwarfs fuse-overlayfs wine-staging bubblewrap wine-mono lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-pipewire lib32-openal libgphoto2 libxcrypt-compat gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gstreamer-vaapi gst-libav lib32-gst-plugins-base-libs lib32-gst-plugins-base lib32-gst-plugins-good sdl2_ttf sdl2_image 
 ```
 
 ## 3. Add graphics packages for your set up.
-
 - GPU/APU Drivers required for AMD GPUs
 ```
-sudo pacman -S --needed lib32-vulkan-radeon vulkan-radeon
+yay -S --needed lib32-vulkan-radeon vulkan-radeon lib32-vulkan-icd-loader
 ```
 
 ## 4. Install additional libraries
-
-- Some games require additional libaries to run successfully. We strongly recommend the following libraries are installed.
-
-sudo pacman -S --needed lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-openal giflib libgphoto2 libxcrypt-compat zlib gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gstreamer-vaapi gst-libav
-
+- Some games require additional libaries to run successfully. We strongly recommend the following libraries are installed:
+```
+yay -S --needed lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-openal giflib libgphoto2 libxcrypt-compat zlib gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gstreamer-vaapi gst-libav
+```
 ## 5. OPTIONAL 
 - Prevent non-LAN activity by default. It is recommended that you prevent access to the WAN for our releases.
 ```
-sudo pacman -S --needed rumpowered/bindtointerface rumpowered/lib32-bindtointerface
+yay -S --needed rumpowered/bindtointerface rumpowered/lib32-bindtointerface
 ```
-- wine-staging-tkg can be used instead of wine-staging, to the user's choice
 
 ```
-sudo pacman -S --needed wine-staging wine-mono \
+yay -S --needed wine-staging wine-mono \
 lib32-giflib lib32-gnutls lib32-libxcomposite lib32-libxinerama lib32-libxslt lib32-mpg123 lib32-v4l-utils lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-openal lib32-zlib giflib libgphoto2 libxcrypt-compat zlib gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gstreamer-vaapi gst-libav \
 vulkan-radeon lib32-vulkan-icd-loader vulkan-icd-loader lib32-vulkan-radeon \
 fuse-overlayfs
 ```
-sudo pacman -S --needed rumpowered/dwarfs # or dwarfs-bin instead?
+yay -S --needed rumpowered/dwarfs # or dwarfs-bin instead?
 steal-git    # removed because dwarfs-bin causing problems
 :: wine-staging and wine-staging-git are in conflict (wine). Remove wine-staging-git? [y/N]
 
 # https://github.com/jc141x/rumpowered-packages/tree/24d3d214a7679c9eab474781516fb11e3a3daa83/pkgbuilds
 
-dwarfs dxvk-bin jc141-bash jc141-vulkan vkd3d-proton-bin windep wine-staging-tkg
+yay -S --needed rumpowered/dwarfs jc141-bash jc141-vulkan vkd3d-proton-bin windep dxvk-bin
 
-# Ember Knights
+- wine-staging-tkg can be used instead of wine-staging, to the user's choice
+yay -S --needed wine-staging-tkg
 
-# https://forum.winehq.org/viewtopic.php?t=33029
-
+## [Ember Knights](https://forum.winehq.org/viewtopic.php?t=33029)
+```
 winetricks atmlib corefonts gdiplus msxml3 msxml6 vcrun2008 vcrun2010 vcrun2012 fontsmooth-rgb gecko
+```
 
 # https://forum.winehq.org/viewtopic.php?t=30270
 
@@ -3624,42 +3663,22 @@ winetricks d3dcompiler_43
 
 DBG=1 bash /run/media/n30/Ember.Knights-jc141/start.e-w.sh
 
-# NVIDIA graphics packages add:
 
-# # sudo pacman -S --needed lib32-vulkan-icd-loader vulkan-icd-loader lib32-libglvnd lib32-nvidia-utils libglvnd nvidia
+## optional packages
+Isolates game from system display server, no desktop res changing when in use. As well as forcing games into fullscreen and scaling when necessary. Can provide AMD FidelityFX Super Resolution or NVIDIA Image Scaling support.
+```
+sudo pacman -S --needed gamescope
+```
 
-# # Add nvidia-drm.modeset=1 as a kernel parameter for the best results.
 
-#
-
-# INTEL graphics packages add:
-
-# vulkan-intel lib32-vulkan-icd-loader vulkan-icd-loader lib32-vulkan-intel
-
-# optional packages
-
-# Isolates game from system display server, no desktop res changing when in use. As well as forcing games into fullscreen and scaling when necessary. Can provide AMD FidelityFX Super Resolution or NVIDIA Image Scaling support.
-
-# sudo pacman -S --needed gamescope
-
-# NVIDIA drivers may have some issues with this.
-
-# Requires full Vulkan support. (old architectures with none or semi are not compatible)
-
-# May cause failure to run from first try in certain cases.
-
-# Is not always used by scripts, testing is done to confirm that it is compatible.
-
-# bindtointerface - block non-LAN network activity by default
-
+## bindtointerface - block non-LAN network activity by default
+```
 sudo pacman -S --needed rumpowered/bindtointerface
+```
+## Update vlk.sh Vulkan [Update](https://github.com/jc141x/jc141-bash/blob/314ecb06df3edac7acbe01be07372a6be18a0eca/root-scripts/files/vlk.sh)?
 
-# Update vlk.sh Vulkan Update?
-
-# https://github.com/jc141x/jc141-bash/blob/314ecb06df3edac7acbe01be07372a6be18a0eca/root-scripts/files/vlk.sh
-
-# add piracy repo:
-
+## add piracy repo:
+```
 echo '
 
 [pirate-arch-repo]
@@ -3667,18 +3686,17 @@ SigLevel = Optional DatabaseOptional
 Server = https://raw.githubusercontent.com/AbdelrhmanNile/pirate-arch-repo/main/x86_64' | sudo tee -a /etc/pacman.conf
 
 sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-
+```
 ## (OPTIONAL)
-
 ---
 
-yay -S mangohud goverlay-git
+yay -S --needed mangohud goverlay-git
 
 * ### Steam Tinker Launch
 
 is a tool for use with the Steam client which allows customizing and start tools and options for games quickly.
 
-# https://github.com/sonic2kk/steamtinkerlaunch/wiki/Installation
+### https://github.com/sonic2kk/steamtinkerlaunch/wiki/Installation
 
 yay -S steamtinkerlaunch-git
 
@@ -3687,17 +3705,18 @@ yay -S steamtinkerlaunch-git
 special build of Proton with various patches and fixes included.
 
 >>> WARNING (You Must run Steam at least once before installing ProtonGE).
->>> yay -S proton-ge-custom
+
+yay -S proton-ge-custom
 >>>
 >>
 
 * ### https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher
 
-yay -S heroic-games-launcher-bin
+yay -S --needed heroic-games-launcher-bin
 
 * ### https://github.com/AbdelrhmanNile/steal
 
-yay -S steal-git dwarfs-bin zpaq
+yay -S --needed steal-git dwarfs-bin zpaq
 
 To run steaL, in your command line type:
 steal
@@ -5392,7 +5411,7 @@ gamescope -w 3440 -h 1440 -f -r 144 -- heroic
 
 "dying light" communication problem with epic online services occurred
 
-
+gamescope -w 3440 -h 1440 -f -r 144 -- bash /run/media/n30/nvme_chivos/linuxsaurio/Cuphead-jc141/start.n-w.sh
 ---
 [Quick setup](https://github.com/neomikr0n/dotfiles) — if you’ve done this kind of thing before
 `https://github.com/neomikr0n/dotfiles.git`
@@ -6002,7 +6021,7 @@ Packages (1) glm-0.9.9.8-1
 yayu cmake
 yayui pipx
 pipx install cmake
-yayi linux-wallpaperengine-wayland-git
+yay -S linux-wallpaperengine-wayland-git
 
 Usage: linux-wallpaperengine [options] background_path/background_id
 
@@ -7618,7 +7637,7 @@ systemctl reboot
 easyeffects + plugins (lsp-plugins calf mda.lv2)
 
 ### essentials
-yay -S git brave whatsie dolphin dolphin-megasync-bin easyeffects lsp-plugins calf mda.lv2 spotify-adblock-git cava-git kdeconnect btop steam wine rustup timer-rs lolcat ktimer sox safeeyes mangohud qt6-wayland ttf-jetbrains-mono-nerd 
+yay -S --needed git brave whatsie dolphin dolphin-megasync-bin easyeffects lsp-plugins calf mda.lv2 spotify-adblock-git cava-git kdeconnect btop steam wine rustup timer-rs lolcat ktimer sox safeeyes mangohud qt6-wayland ttf-jetbrains-mono-nerd 
 
 ## debugging
 
@@ -7679,7 +7698,53 @@ https://github.com/ldelossa/dotfiles/blob/49d9acfed5eb9d8351319e4b3e25c8293aed54
 ------------------------
 
 
-mesh lavadora
-[desinfectante](https://www.amazon.com.mx/Bactericida-Members-desinfectar-fruta-utensilios/dp/B0BGQLWRNR/ref=sr_1_2_mod_primary_new?keywords=Microdyn&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=8-2)
-bluetooth usb
+```
+WINEPREFIX INFO:
+Drive C: total 0
+drwxr-xr-x 1 n30 n30 110 ago  2 18:47 .
+drwxr-xr-x 1 n30 n30 126 ago 23 09:04 ..
+drwxr-xr-x 1 n30 n30  18 ago  2 18:47 ProgramData
+drwxr-xr-x 1 n30 n30 118 ago  2 18:47 Program Files
+drwxr-xr-x 1 n30 n30 118 ago  2 18:47 Program Files (x86)
+drwxr-xr-x 1 n30 n30  18 ago  2 18:47 users
+drwxr-xr-x 1 n30 n30 484 ago  2 18:47 windows
 
+Registry info:
+/home/n30/.wine/system.reg:#arch=win64
+/home/n30/.wine/userdef.reg:#arch=win64
+/home/n30/.wine/user.reg:#arch=win64
+
+---
+wine cmd.exe /c echo '%AppData%' returned empty string, error message "wine: could not load kernel32.dll, status c0000135" 
+```
+
+---
+ ╰─λ winetricks list-installed
+vcrun2010
+atmlib
+andale
+arial
+comicsans
+courier
+georgia
+impact
+times
+trebuchet
+verdana
+webdings
+corefonts
+gdiplus
+w_workaround_wine_bug-26925
+msxml3
+msxml6
+vcrun2012
+fontsmooth=rgb
+d3dcompiler_43
+
+---
+
+:: Pacman is currently in use, please wait...
+Fix:
+```
+sudo rm /var/lib/pacman/db.lck
+```

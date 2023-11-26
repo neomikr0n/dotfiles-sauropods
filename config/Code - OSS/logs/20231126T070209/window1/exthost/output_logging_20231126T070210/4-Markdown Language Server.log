@@ -1,0 +1,10 @@
+[Trace 13:02:10.899] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 13:02:10.899] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 13:02:11.146] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 13:02:11.357] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 13:02:11.376] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 13:02:11.377] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 13:02:11.377] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 13:05:11.108] VsCodeClientWorkspace: TextDocument.onDidClose: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 13:05:11.108] VsCodeClientWorkspace: deleteDocument: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 13:05:11.108] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md

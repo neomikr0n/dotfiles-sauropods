@@ -94,6 +94,28 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/n30/.dotfiles/config/Code%20-%20OSS/Preferences",
+                                        "path": "/home/n30/.dotfiles/config/Code - OSS/Preferences",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/config/Code - OSS/Preferences"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/n30/.dotfiles/config/Code%20-%20OSS/User/settings.json",
+                                        "path": "/home/n30/.dotfiles/config/Code - OSS/User/settings.json",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/config/Code - OSS/User/settings.json"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/n30/.dotfiles/README.md",
                                         "path": "/home/n30/.dotfiles/README.md",
                                         "scheme": "file"
@@ -177,28 +199,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.dotfiles_old/config/hypr/component/waybar/config"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.dotfiles_old/config/hypr/configs/hyprland.conf_settings-GRAVITY",
-                                        "path": "/home/n30/.dotfiles_old/config/hypr/configs/hyprland.conf_settings-GRAVITY",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles_old/config/hypr/configs/hyprland.conf_settings-GRAVITY"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.dotfiles/config/swaync/config.json",
-                                        "path": "/home/n30/.dotfiles/config/swaync/config.json",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles/config/swaync/config.json"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -792,7 +792,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -870,54 +871,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1704,9 +1696,9 @@
             "backupPath": "/home/n30/.config/Code - OSS/Backups/1feba4cd03760bc246259d32580ab904",
             "uiState": {
                 "mode": 1,
-                "x": 2306,
+                "x": 1285,
                 "y": 50,
-                "width": 1124,
+                "width": 1188,
                 "height": 1380
             }
         },
