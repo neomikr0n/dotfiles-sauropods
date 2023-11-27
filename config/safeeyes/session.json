@@ -1,11 +1,11 @@
 {
-    "break": "Rotate your eyes in counterclockwise direction",
+    "break": "Tightly close your eyes",
     "plugin": {
         "healthstats": {
             "last_screen_time": 26444,
             "next_reset_time": "2023-11-27 00:00:00",
-            "no_of_breaks": 11,
-            "no_of_skipped_breaks": 4,
+            "no_of_breaks": 25,
+            "no_of_skipped_breaks": 12,
             "safe_eyes_start_time": "2023-11-07 19:21:53",
             "total_idle_time": 0
         }

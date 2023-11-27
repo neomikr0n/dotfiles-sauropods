@@ -8,3 +8,5 @@
 2023-11-26 07:02:10.433 [info] Added views:workbench.explorer.fileView in workbench.view.explorer
 2023-11-26 07:02:10.538 [info] Added views:workbench.debug.welcome in workbench.view.debug
 2023-11-26 07:02:10.755 [info] Added views:workbench.panel.repl.view in workbench.panel.repl
+2023-11-26 11:17:09.401 [info] Added views:workbench.views.extensions.installed,workbench.views.extensions.popular,extensions.recommendedList in workbench.view.extensions
+2023-11-26 11:17:09.403 [info] Removed views:workbench.views.extensions.popular from workbench.view.extensions

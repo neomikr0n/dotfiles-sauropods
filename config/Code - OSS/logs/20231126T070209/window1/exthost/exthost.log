@@ -66,3 +66,17 @@
 2023-11-26 07:07:48.310 [warning] [Decorations] CAPPING events from decorations provider vscode.git 353
 2023-11-26 07:07:53.376 [warning] [Decorations] CAPPING events from decorations provider vscode.git 353
 2023-11-26 07:07:58.458 [warning] [Decorations] CAPPING events from decorations provider vscode.git 353
+2023-11-26 07:08:03.516 [warning] [Decorations] CAPPING events from decorations provider vscode.git 353
+2023-11-26 07:12:29.863 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
+2023-11-26 08:03:27.954 [error] [yzhang.markdown-all-in-one] provider FAILED
+2023-11-26 08:03:27.964 [error] TypeError: Cannot read properties of undefined (reading 'type')
+	at detectTocRanges (/home/n30/.vscode-oss/extensions/yzhang.markdown-all-in-one-3.5.1-universal/dist/node/main.js:38217:29)
+	at process.processTicksAndRejections (node:internal/process/task_queues:96:5)
+	at async u.provideCodeLenses (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:38705)
+2023-11-26 08:03:28.650 [error] [yzhang.markdown-all-in-one] provider FAILED
+2023-11-26 08:03:28.650 [error] TypeError: Cannot read properties of undefined (reading 'type')
+	at detectTocRanges (/home/n30/.vscode-oss/extensions/yzhang.markdown-all-in-one-3.5.1-universal/dist/node/main.js:38217:29)
+	at process.processTicksAndRejections (node:internal/process/task_queues:96:5)
+	at async u.provideCodeLenses (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:38705)
+2023-11-26 09:10:26.176 [warning] [Decorations] CAPPING events from decorations provider vscode.git 7363
+2023-11-26 10:15:26.774 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'

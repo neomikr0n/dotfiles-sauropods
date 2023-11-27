@@ -48,8 +48,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -89,6 +88,61 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/n30/.dotfiles/config/chromium-flags.conf",
+                                        "path": "/home/n30/.dotfiles/config/chromium-flags.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/config/chromium-flags.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/n30/.dotfiles/config/hypr/colors.conf",
+                                        "path": "/home/n30/.dotfiles/config/hypr/colors.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/config/hypr/colors.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/n30/.dotfiles/config/hypr/hyprstart",
+                                        "path": "/home/n30/.dotfiles/config/hypr/hyprstart",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.dotfiles/config/hypr/hyprstart"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///run/media/n30/chivos_4t/garuda-n30/.local/share/jc141/wine/prefix/drive_c/users/n30/AppData/Local/Rockstar%20Games/Red%20Dead%20Redemption%202/exit_file.dat",
+                                        "path": "/run/media/n30/chivos_4t/garuda-n30/.local/share/jc141/wine/prefix/drive_c/users/n30/AppData/Local/Rockstar Games/Red Dead Redemption 2/exit_file.dat",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/run/media/n30/chivos_4t/garuda-n30/.local/share/jc141/wine/prefix/drive_c/users/n30/AppData/Local/Rockstar Games/Red Dead Redemption 2/exit_file.dat"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///run/media/n30/nvme_chivos/linuxsaurio/ELDEN.RING-jc141/start.e-w.sh",
+                                        "path": "/run/media/n30/nvme_chivos/linuxsaurio/ELDEN.RING-jc141/start.e-w.sh",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/run/media/n30/nvme_chivos/linuxsaurio/ELDEN.RING-jc141/start.e-w.sh"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -144,61 +198,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/Documents/journalctl.log"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.config/hypr/session.sh",
-                                        "path": "/home/n30/.config/hypr/session.sh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/hypr/session.sh"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.config/hypr/session.conf",
-                                        "path": "/home/n30/.config/hypr/session.conf",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/hypr/session.conf"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.config/hypr/sauropods.conf",
-                                        "path": "/home/n30/.config/hypr/sauropods.conf",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/hypr/sauropods.conf"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.dotfiles/bin/Polkit.sh",
-                                        "path": "/home/n30/.dotfiles/bin/Polkit.sh",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles/bin/Polkit.sh"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/n30/.dotfiles_old/config/hypr/component/waybar/config",
-                                        "path": "/home/n30/.dotfiles_old/config/hypr/component/waybar/config",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.dotfiles_old/config/hypr/component/waybar/config"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -792,8 +791,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1698,7 +1696,7 @@
                 "mode": 1,
                 "x": 1285,
                 "y": 50,
-                "width": 1188,
+                "width": 1703,
                 "height": 1380
             }
         },

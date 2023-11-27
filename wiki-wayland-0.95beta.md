@@ -6,9 +6,6 @@
 sudo pacman -S yay
 ```
 
-You can clean the cached packages by running 
-``
-
 <!-- TODO: -->
 
 > - garuda
@@ -209,6 +206,18 @@ QPlatformTheme for a better Qt6 application inclusion in GNOME
 
 > # **[ddccontrol](https://github.com/ddccontrol/ddccontrol)**
 DDCcontrol is a software used to control monitor parameters, like brightness, contrast, RGB color levels and others. dell OSD
+```
+cd ~/forks/
+git clone https://github.com/ddccontrol/ddccontrol.git
+cd ddccontrol
+./autogen.sh
+aclocal
+./configure --prefix=/usr/local/ --sysconfdir=/etc --libexecdir=/usr/local/lib
+make
+sudo make install
+```
+
+> ## NOW INSTALL ***ddccontrol-db*** ⏬
 
 ## Warning! 
 There is no support for your monitor in the database, but ddccontrol is using a basic generic profile. Many controls will not be supported, and some controls may not work as expected.
@@ -216,14 +225,87 @@ Please update ddccontrol-db, or, if you are already using the latest version, pl
 `LANG= LC_ALL= ddccontrol -p -c -d | tee ~/Downloads/dell-s3422dwg.txt `
 
 ## [Brightness 0-100]
-ddccontrol -r 0x10 -w 90 dev:/dev/i2c-6
+ddccontrol -r 0x10 -w 90 dev:/dev/i2c-10
 ## [Contrast 0-100]
-ddccontrol -r 0x12 -w 90 dev:/dev/i2c-6
+ddccontrol -r 0x12 -w 90 dev:/dev/i2c-10
 ## [DPMS 0-5] TODO: not working!!!
 The valid values for this control are 0 (Off), 1 (On), 2 (Standby), and 3 (Suspend).
 <!-- ddccontrol -r 0xd6 -w 1 dev:/dev/i2c-6
 ddccontrol -r 0xd6 -w 2 dev:/dev/i2c-6 -->
 
+> # **[ddccontrol-db](https://github.com/ddccontrol/ddccontrol-db#installation)**
+
+## [IMPORTANT!!](https://github.com/ddccontrol/ddccontrol-db/compare/master...neomikr0n:ddccontrol-db:patch-1) ./configure --prefix=/usr/***local***/
+has to be "local" 
+```
+cd ~/forks/
+git clone https://github.com/ddccontrol/ddccontrol-db.git
+cd ddccontrol-db
+./autogen.sh 
+./configure --prefix=/usr/local
+make
+sudo make install
+```
+`
+sudo ddccontrol -p
+`
+```
+= VESA standard monitor
+> Color settings
+	> Brightness and Contrast
+		> id=brightness, name=Brightness, address=0x10, delay=-1ms, type=0
+		 supported, value=100, maximum=100
+		> id=contrast, name=Contrast, address=0x12, delay=-1ms, type=0
+		 supported, value=100, maximum=100
+	> Color maximum level
+		> id=red, name=Red maximum level, address=0x16, delay=-1ms, type=0
+		 supported, value=100, maximum=100
+		> id=green, name=Green maximum level, address=0x18, delay=-1ms, type=0
+		 supported, value=100, maximum=100
+		> id=blue, name=Blue maximum level, address=0x1a, delay=-1ms, type=0
+		 supported, value=100, maximum=100
+> Input settings
+	> Input sources
+		> id=inputsource, name=Input Source Select (Main), address=0x60, delay=-1ms, type=2
+		 Possible values:
+			> id=analog - name=Analog, value=1
+			> id=digital - name=Digital, value=3
+		 supported, value=3855, maximum=4626
+> Others
+	> Restore defaults
+		> id=defaults, name=Restore Factory Defaults, address=0x4, delay=2000ms, type=1
+		 Possible values:
+			> id=default - name=Restore Factory Defaults, value=1
+		 supported, value=0, maximum=1
+		> id=defaultluma, name=Restore Brightness and Contrast, address=0x5, delay=2000ms, type=1
+		 Possible values:
+			> id=default - name=Restore Brightness and Contrast, value=1
+		 supported, value=0, maximum=1
+		> id=defaultcolor, name=Restore Factory Default Color, address=0x8, delay=2000ms, type=1
+		 Possible values:
+			> id=default - name=Restore Factory Default Color, value=1
+		 supported, value=0, maximum=1
+	> Audio
+		> id=audiospeakervolume, name=Audio Speaker Volume Adjust, address=0x62, delay=-1ms, type=0
+		 supported, value=85, maximum=100
+	> OSD
+		> id=newcontrolvalue, name=New Control Value, address=0x2, delay=-1ms, type=2
+		 Possible values:
+			> id=nochanges - name=No changes, value=1
+			> id=changed - name=Some values changed, value=2
+		 supported, value=1, maximum=255
+	> Power control
+		> id=dpms, name=DPMS Control, address=0xd6, delay=-1ms, type=2
+		 Possible values:
+			> id=on - name=On, value=1
+			> id=standby - name=Standby, value=4
+		 supported, value=1, maximum=5
+		> id=power, name=Power control, address=0xe1, delay=-1ms, type=2
+		 Possible values:
+			> id=off - name=Off, value=0
+			> id=on - name=On, value=1
+		 supported, value=0, maximum=1
+```
 
 > # **[msigd](https://github.com/couriersud/msigd)**
 The msigd command line tool allows you to change most settings for MSI monitors which can be set in the monitor's OSD menu.
@@ -346,21 +428,26 @@ If you want to back up your Kate theme, you can follow these steps:
 
 ---
 
-> # **[gammarelay wl](https://github.com/jeremija/wl-gammarelay)**
+> # **[wl-gammarelay-rs](https://github.com/MaxVerevkin/wl-gammarelay-rs)**
 
 ---
-
-This utility was developed from gammastep, a fork of redshift as well as examples from wlroots.
-It allows using keybindings to dynamically change the color temperature and software brightness.
-This used to be possible using redshift using the -P -O <temp> flags, but since wayland requires the client to keep running, I developed this tool that spins up a daemon and can be controlled via unix domain socket.
-The wl-gammarelay is a daemon which listens to DBus requests:
-
-`busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -500 busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +500 busctl --user -- set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 4000 busctl --user -- set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500`
+Like wl-gammarelay, but written in rust, runs on a single thread, has three times less SLOC and uses DBus (for simplicity).
 
 The service can be introspected:
-`busctl --user introspect rs.wl-gammarelay / rs.wl.gammarelay`
 
-## hyprland.conf
+`busctl --user introspect rs.wl-gammarelay / rs.wl.gammarelay`
+```
+NAME               TYPE      SIGNATURE RESULT/VALUE FLAGS
+.ToggleInverted    method    -         -            -
+.UpdateBrightness  method    d         -            -
+.UpdateGamma       method    d         -            -
+.UpdateTemperature method    n         -            -
+.Brightness        property  d         1            emits-change writable
+.Gamma             property  d         1            emits-change writable
+.Inverted          property  b         false        emits-change writable
+.Temperature       property  q         6500         emits-change writable
+```
+## hyprland.conf:
 ```
 exec= wl-gammarelay 
 bind= $triMod,Kp_Left,exec,busctl --user -- set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 6500
@@ -370,8 +457,41 @@ bind= $triMod,Kp_Right,exec,busctl --user -- set-property rs.wl-gammarelay / rs.
 # busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100
 ```
 
+### Example usage in scripts:
+```
 # Set the temperature to `5000`
 busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Temperature q 5000
+
+# Increase the temperature by `100`:
+busctl --user call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n 100
+
+# Decrease the temperature by `100`:
+busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100
+
+# Invert colors
+busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Inverted b true
+
+# Toggle inverted colors
+busctl --user call rs.wl-gammarelay / rs.wl.gammarelay ToggleInverted
+
+# Set the brightness to `100%`:
+busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Brightness d 1
+
+# Increase the brightness by `10%`:
+busctl --user call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d 0.1
+
+# Decrease the brightness by `10%`:
+busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.1
+
+# Set display gamma to `1.0`:
+busctl --user set-property rs.wl-gammarelay / rs.wl.gammarelay Gamma d 1
+
+# Increase gamma by `0.1`:
+busctl --user call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d 0.1
+
+# Decrease gamma by `0.1`:
+busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d -0.1
+```
 
 
 ---
@@ -2013,10 +2133,10 @@ Server = https://repo.archlinuxcn.org/$arch
   - In VS Code, use the command palette (ctrl + shift + p) to open the JSON version of the editor’s settings.
 
   - Then set the editor.fontFamily setting to JetBrains Mono and if you want the awesome ligatures as well, set editor.fontLigatures to true:
-    ```
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontLigatures": true,
-    ```
+  ```
+  "terminal.integrated.fontFamily": "'JetbrainsMono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'monospace'",
+  "editor.fontLigatures": true,
+  ```
   - Save the file
 
 - ## still not showing the propper unicode?
@@ -2476,6 +2596,20 @@ You only need to change the “user agent” settings to trick Bing into thinkin
 6. Once you complete the steps, you should now be able to use the new Bing with ChatGPT integration from Google Chrome.
 7. If you no longer need access to the chatbot, you can use the same instructions outlined above, but in step 4, check the “Use browser default” option.
 
+## [Force a password store:](https://www.reddit.com/r/hyprland/comments/15b46ir/hyprland_brave_browser/)
+
+- Launch browser everytime with the flag:
+```
+brave --password-store=gnome
+```
+- or [Make it permanent](https://wiki.archlinux.org/title/Chromium#Force_a_password_store):
+
+`
+~/.config/chromium-flags.conf
+`
+```
+--password-store=gnome
+```
 
 # [EDGE]() (from Microsoft)
 - JetBrainsMono Nerd Font
@@ -3537,47 +3671,48 @@ Total Installed Size:  1331.59 MiB
 
 :: Proceed with installation? [Y/n] 
 
-# GameMode
+## SAVED GAMES
+- ### ELDEN RING
 
-# https://github.com/FeralInteractive/gamemode
+      /home/n30/.local/share/jc141/wine/prefix/drive_c/users/n30/AppData/Roaming/EldenRing/
 
+- ### Cuphead
+      /home/n30/.local/share/jc141/wine/prefix/drive_c/users/n30/AppData/Roaming/Cuphead/
+
+## UNINSTALL
+- ### For the first part:
+
+      cd $HOME
+      rm -r .wine
+      rm .config/menus/applications-merged/wine*
+      rm -r .local/share/applications/wine
+      rm .local/share/desktop-directories/wine*
+      rm .local/share/icons/????_*.xpm
+
+- ### second part:
+
+
+
+# [GameMode](https://github.com/FeralInteractive/gamemode)
+
+- ## install
 yay -S --needed gamemode meson systemd git dbus libinih
 
-# test it
+- ## test it
 
 gamemoded -t
 
-# [jc141](https://github.com/jc141x/jc141-bash/tree/master/setup) scripts for gaming games
-
-## [gamemode](https://github.com/FeralInteractive/gamemode)
-
-## [optional user inteface launchers](https://github.com/jc141x/jc141-bash/blob/master/setup/launchers.md)
-
-- ### [rum](https://github.com/jc141x/rum)
-
-single purpose launcher which focuses on interface and leaving the configuration to the bash script.
-![.](https://camo.githubusercontent.com/9a2d1f37f782095f310175f87f9daa7b650d9d9d4ce4ddb212b2ade551dcd69a/68747470733a2f2f692e706f7374696d672e63632f6e4c394d4a3444662f797472797274792e706e67)
-
-```
-cd ~/Downloads && \
-git clone https://github.com/jc141x/rum.git && \
-cd rum/
-```
-```
-pnpm install
-pnpm build
-pnpm tauri build
-```
-
-- ### [heroic](https://heroicgameslauncher.com/)
-Heroic is an Open Source GOG and Epic games launcher 
-![.](https://heroicgameslauncher.com/_next/static/images/heroic_01-4864abe462a3555732f717d23f3fbfde.png.webp)
+# [heroic](https://heroicgameslauncher.com/)
+an Open Source GOG and Epic games launcher 
+![.](https://heroicgameslauncher.com/_next/static/images/heroic_01-ef912ab5de21c27fe75a7b001b1a869b.png.webp)
 
 
 
 
-> ## [jc141 Setup Guide](https://gitlab.com/jc141x/setup)
+> # [jc141 Setup Guide](https://gitlab.com/jc141x/setup)
 #### [OLD Setup Guide - Arch](https://github.com/jc141x/jc141-bash/blob/314ecb06df3edac7acbe01be07372a6be18a0eca/setup/arch.md)
+
+[matrix support](https://app.element.io/#/room/!JgvlSftYxvnARNONxm:matrix.org)
 
 ###  1. add rumpowered repo and multilib
 
@@ -3600,6 +3735,14 @@ garuda-update
 - Make sure you do not have amdvlk (having it installed will cause a lot of issues):
 ```
 yay -R amdvlk
+```
+
+- ## one command to rule them all:
+```
+yay -S --needed wine-staging rumpowered/dwarfs fuse-overlayfs bubblewrap wine-mono lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-pipewire lib32-openal libgphoto2 libxcrypt-compat gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gstreamer-vaapi gst-libav lib32-gst-plugins-base-libs lib32-gst-plugins-base lib32-gst-plugins-good sdl2_ttf sdl2_image \
+lib32-vulkan-radeon vulkan-radeon lib32-vulkan-icd-loader \
+lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-openal giflib libgphoto2 libxcrypt-compat zlib gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gstreamer-vaapi gst-libav \
+rumpowered/bindtointerface rumpowered/lib32-bindtointerface \
 ```
 
 ## 2. Add required core packages
@@ -3625,25 +3768,25 @@ yay -S --needed lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-openal gi
 ```
 yay -S --needed rumpowered/bindtointerface rumpowered/lib32-bindtointerface
 ```
+## 6. [profit?](https://github.com/jc141x/rumpowered-packages/tree/24d3d214a7679c9eab474781516fb11e3a3daa83/pkgbuilds)
 
-```
-yay -S --needed wine-staging wine-mono \
-lib32-giflib lib32-gnutls lib32-libxcomposite lib32-libxinerama lib32-libxslt lib32-mpg123 lib32-v4l-utils lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-openal lib32-zlib giflib libgphoto2 libxcrypt-compat zlib gst-plugins-base gst-plugins-good gst-plugins-ugly gst-plugins-bad gstreamer-vaapi gst-libav \
-vulkan-radeon lib32-vulkan-icd-loader vulkan-icd-loader lib32-vulkan-radeon \
-fuse-overlayfs
-```
 yay -S --needed rumpowered/dwarfs # or dwarfs-bin instead?
 steal-git    # removed because dwarfs-bin causing problems
 :: wine-staging and wine-staging-git are in conflict (wine). Remove wine-staging-git? [y/N]
 
-# https://github.com/jc141x/rumpowered-packages/tree/24d3d214a7679c9eab474781516fb11e3a3daa83/pkgbuilds
+
 
 yay -S --needed rumpowered/dwarfs jc141-bash jc141-vulkan vkd3d-proton-bin windep dxvk-bin
 
 - wine-staging-tkg can be used instead of wine-staging, to the user's choice
 yay -S --needed wine-staging-tkg
 
-## [Ember Knights](https://forum.winehq.org/viewtopic.php?t=33029)
+- ## TROUBLESHOOT
+### [Ember Knights](https://forum.winehq.org/viewtopic.php?t=33029)
+```
+DBG=1 bash /run/media/n30/Ember.Knights-jc141/start.e-w.sh
+```
+
 ```
 winetricks atmlib corefonts gdiplus msxml3 msxml6 vcrun2008 vcrun2010 vcrun2012 fontsmooth-rgb gecko
 ```
@@ -3651,7 +3794,7 @@ winetricks atmlib corefonts gdiplus msxml3 msxml6 vcrun2008 vcrun2010 vcrun2012 
 # https://forum.winehq.org/viewtopic.php?t=30270
 
 winetricks d3dcompiler_43
-
+```
 [2023-02-27 19:12:43.608] [MANGOHUD] [error] [file_utils.cpp:43] Error opening directory '/sys/class/drm/card0-HDMI-A-1/device/hwmon/': No such file or directory
 [2023-02-27 19:12:43.608] [MANGOHUD] [error] [file_utils.cpp:43] Error opening directory '/sys/class/drm/card0-DP-2/device/hwmon/': No such file or directory
 [2023-02-27 19:12:43.627] [MANGOHUD] [info] [overlay.cpp:768] Uploading is disabled (permit_upload = 0)
@@ -3660,24 +3803,27 @@ winetricks d3dcompiler_43
 0220:fixme:kernelbase:AppPolicyGetThreadInitializationType FFFFFFFFFFFFFFFA, 00000000705DFE10
 0220:fixme:avrt:AvSetMmThreadCharacteristicsW (L"Audio",00000000705DFDB8): stub
 [2023-02-27 19:12:43.831] [MANGOHUD] [error] [file_utils.cpp:43] Error opening directory '/sys/class/drm/card0-HDMI-A-1/device/hwmon/': No such file or directory
+```
 
-DBG=1 bash /run/media/n30/Ember.Knights-jc141/start.e-w.sh
+### it takes two jc141
 
+To fix the language on it takes two, run `bash settings.sh` mount-dwarfs then go to `files/groot` and edit the file `codex.cfg`. where you see `ru_RU` replace with `en_US`.
+
+The earlier torrent also had a black screen issue. you can just can the script from the new torrent and it will be fixed as well
+
+## Update vlk.sh Vulkan (deprecated?) [Update](https://github.com/jc141x/jc141-bash/blob/314ecb06df3edac7acbe01be07372a6be18a0eca/root-scripts/files/vlk.sh)?
+
+
+chmod +x /home/n30/Downloads/vlk.sh
+bash /home/n30/Downloads/vlk.sh
 
 ## optional packages
 Isolates game from system display server, no desktop res changing when in use. As well as forcing games into fullscreen and scaling when necessary. Can provide AMD FidelityFX Super Resolution or NVIDIA Image Scaling support.
 ```
-sudo pacman -S --needed gamescope
+yay -S --needed gamescope
 ```
 
-
-## bindtointerface - block non-LAN network activity by default
-```
-sudo pacman -S --needed rumpowered/bindtointerface
-```
-## Update vlk.sh Vulkan [Update](https://github.com/jc141x/jc141-bash/blob/314ecb06df3edac7acbe01be07372a6be18a0eca/root-scripts/files/vlk.sh)?
-
-## add piracy repo:
+## add piracy repo(not found??):
 ```
 echo '
 
@@ -3714,7 +3860,13 @@ yay -S proton-ge-custom
 
 yay -S --needed heroic-games-launcher-bin
 
-* ### https://github.com/AbdelrhmanNile/steal
+* ### [steaL](https://github.com/AbdelrhmanNile/steal)
+![x](https://camo.githubusercontent.com/a69eed64e4f29d6751e752cf4208bc5873b23620122ff53595aaa3d7150d2dd4/68747470733a2f2f692e696d6775722e636f6d2f30705a793956322e706e67)
+
+free and opensource game-center and bittorrent client for Linux, steaL fetches all the repacks uploaded by [johncena141](https://1337x.to/user/johncena141/) on 1337x
+just download the game and run it! everything is pre-configuired for you thank's to johncena141 repacks!
+
+steaL's database gets updated weekly to fetch new released johncena141 repacks
 
 yay -S --needed steal-git dwarfs-bin zpaq
 
@@ -3737,11 +3889,7 @@ Usage: just search for the game you want and download it, wait until it finish e
 
 after it's done just click the update button to update the library and your game will be there to launch a game just click on it.  Enjoy!!
 
-## it takes two jc141
 
-To fix the language on it takes two, run `bash settings.sh` mount-dwarfs then go to `files/groot` and edit the file `codex.cfg`. where you see `ru_RU` replace with `en_US`.
-
-The earlier torrent also had a black screen issue. you can just can the script from the new torrent and it will be fixed as well
 
 # KTIMER
 
@@ -7740,7 +7888,8 @@ msxml6
 vcrun2012
 fontsmooth=rgb
 d3dcompiler_43
-
+d3dx9_43
+d3dx11_43
 ---
 
 :: Pacman is currently in use, please wait...
