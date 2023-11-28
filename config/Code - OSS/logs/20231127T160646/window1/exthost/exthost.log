@@ -1,0 +1,18 @@
+2023-11-27 16:06:47.876 [info] Extension host with pid 2644 started
+2023-11-27 16:06:47.876 [info] Skipping acquiring lock for /home/n30/.config/Code - OSS/User/workspaceStorage/1feba4cd03760bc246259d32580ab904.
+2023-11-27 16:06:47.941 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2023-11-27 16:06:47.941 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2023-11-27 16:06:47.941 [info] ExtensionService#_doActivateExtension yzhang.markdown-all-in-one, startup: false, activationEvent: 'onLanguage:markdown'
+2023-11-27 16:06:47.941 [info] ExtensionService#_doActivateExtension zaaack.markdown-editor, startup: false, activationEvent: 'onLanguage:markdown'
+2023-11-27 16:06:47.941 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-11-27 16:06:48.071 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: yzhang.markdown-all-in-one
+2023-11-27 16:06:48.135 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-11-27 16:06:48.135 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-11-27 16:06:48.173 [info] Eager extensions activated
+2023-11-27 16:06:48.182 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-11-27 16:06:48.183 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2023-11-27 16:06:48.183 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-11-27 16:06:48.183 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2023-11-27 16:06:48.183 [info] ExtensionService#_doActivateExtension jgclark.vscode-todo-highlight, startup: false, activationEvent: 'onStartupFinished'
+2023-11-27 16:06:48.183 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2023-11-27 16:06:48.184 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'

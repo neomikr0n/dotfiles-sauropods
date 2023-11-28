@@ -7897,3 +7897,28 @@ Fix:
 ```
 sudo rm /var/lib/pacman/db.lck
 ```
+
+
+:: mesa-git and mesa are in conflict. Remove mesa? [y/N] y
+:: mesa-git and vulkan-intel are in conflict. Remove vulkan-intel? [y/N] y
+:: mesa-git and vulkan-radeon are in conflict. Remove vulkan-radeon? [y/N] y
+:: mesa-git and vulkan-mesa-layers are in conflict. Remove vulkan-mesa-layers? [y/N] y
+:: mesa-git and libva-mesa-driver are in conflict. Remove libva-mesa-driver? [y/N] y
+:: mesa-git and mesa-vdpau are in conflict. Remove mesa-vdpau? [y/N] y
+:: mesa-git and vulkan-swrast are in conflict. Remove vulkan-swrast? [y/N] y
+
+Package (8)         Old Version  New Version                                Net Change
+
+libva-mesa-driver   1:23.2.1-2                                              -14.45 MiB
+mesa                1:23.2.1-2                                              -93.01 MiB
+mesa-vdpau          1:23.2.1-2                                              -13.72 MiB
+vulkan-intel        1:23.2.1-2                                              -29.47 MiB
+vulkan-mesa-layers  1:23.2.1-2                                               -0.64 MiB
+vulkan-radeon       1:23.2.1-2                                               -9.75 MiB
+vulkan-swrast       1:23.2.1-2                                               -7.85 MiB
+mesa-git                         24.0.0_devel.181158.f843b14c171.d41d8cd-1  169.16 MiB
+
+Total Installed Size:  169.16 MiB
+Net Upgrade Size:        0.27 MiB
+
+:: Proceed with installation? [Y/n] 
