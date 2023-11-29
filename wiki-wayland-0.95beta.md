@@ -1490,7 +1490,6 @@ lsmod | grep amdgpu
 
 inxi -Fxxxrz
 
-# nvidia-smi
 
 ## [INSTALLING AMD RADEON 6650](https://wiki.archlinux.org/title/AMDGPU#Selecting_the_right_driver)
 
@@ -7922,3 +7921,17 @@ Total Installed Size:  169.16 MiB
 Net Upgrade Size:        0.27 MiB
 
 :: Proceed with installation? [Y/n] 
+
+
+
+https://bbs.archlinux.org/viewtopic.php?id=271036
+   vulkan-mesa-layers
+   opencl-mesa  (probably don't need)
+   vulkan-radeon
+   libva-mesa-driver
+   mesa
+   lib32-vulkan-mesa-layers
+   lib32-opencl-mesa  (probably don't need)
+   lib32-vulkan-radeon
+   lib32-libva-mesa-driver
+   lib32-mesa

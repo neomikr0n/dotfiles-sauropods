@@ -16,3 +16,4 @@
 2023-11-27 16:06:48.183 [info] ExtensionService#_doActivateExtension jgclark.vscode-todo-highlight, startup: false, activationEvent: 'onStartupFinished'
 2023-11-27 16:06:48.183 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
 2023-11-27 16:06:48.184 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'
+2023-11-27 19:53:00.956 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
