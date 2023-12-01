@@ -1,7 +1,0 @@
-2023-11-26 07:02:13.810 [info] [perf] Render performance baseline is 32ms
-2023-11-26 07:02:21.115 [error] Error while registering log channel file:///home/n30/.config/Code%20-%20OSS/logs/20231126T070209/userDataSync.log Timed out while waiting for file to be created
-2023-11-26 07:08:48.078 [warning] SettingsEditor2: Settings not included in settingsLayout.ts: application.experimental.rendererProfiling
-2023-11-26 08:03:27.965 [error] Cannot read properties of undefined (reading 'type'): TypeError: Cannot read properties of undefined (reading 'type')
-	at detectTocRanges (/home/n30/.vscode-oss/extensions/yzhang.markdown-all-in-one-3.5.1-universal/dist/node/main.js:38217:29)
-	at process.processTicksAndRejections (node:internal/process/task_queues:96:5)
-	at async u.provideCodeLenses (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:38705)

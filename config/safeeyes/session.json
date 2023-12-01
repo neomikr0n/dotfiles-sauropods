@@ -1,11 +1,11 @@
 {
-    "break": "Have some water",
+    "break": "Rotate your eyes in clockwise direction",
     "plugin": {
         "healthstats": {
-            "last_screen_time": 30204,
-            "next_reset_time": "2023-11-29 00:00:00",
-            "no_of_breaks": 1,
-            "no_of_skipped_breaks": 0,
+            "last_screen_time": 32985,
+            "next_reset_time": "2023-12-01 00:00:00",
+            "no_of_breaks": 4,
+            "no_of_skipped_breaks": 2,
             "safe_eyes_start_time": "2023-11-07 19:21:53",
             "total_idle_time": 0
         }

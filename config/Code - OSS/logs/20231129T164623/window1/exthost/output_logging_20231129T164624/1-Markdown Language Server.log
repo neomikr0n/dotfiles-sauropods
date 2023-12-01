@@ -1,0 +1,22 @@
+[Trace 22:46:24.935] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 22:46:24.935] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 22:46:24.935] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 22:46:24.935] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 22:46:24.991] LinkProvider: compute - file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 22:46:25.010] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 22:46:25.237] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 22:46:26.444] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md 1
+[Debug 22:46:26.444] TableOfContentsProvider: create - file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 22:46:26.803] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md 1
+[Trace 23:01:13.982] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:01:14.182] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/wiki-wayland-0.95beta.md
+[Trace 23:02:01.459] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/n30/.dotfiles/README.md
+[Trace 23:02:01.459] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/n30/.dotfiles/README.md
+[Trace 23:02:01.459] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Trace 23:02:01.459] DocumentSymbolProvider: provideDocumentSymbols — file:///home/n30/.dotfiles/README.md 1
+[Debug 23:02:01.459] LinkProvider: compute - file:///home/n30/.dotfiles/README.md
+[Trace 23:02:01.459] Server: connection.languages.diagnostics.on: file:///home/n30/.dotfiles/README.md
+[Debug 23:02:01.467] TableOfContentsProvider: create - file:///home/n30/.dotfiles/README.md
+[Debug 23:02:01.638] MdFoldingProvider: provideFoldingRanges — file:///home/n30/.dotfiles/README.md 1
+[Trace 23:02:12.124] VsCodeClientWorkspace: TextDocument.onDidClose: file:///home/n30/.dotfiles/README.md
+[Trace 23:02:12.124] VsCodeClientWorkspace: deleteDocument: file:///home/n30/.dotfiles/README.md

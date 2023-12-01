@@ -1,0 +1,2 @@
+2023-11-29 16:46:27.052 [info] [perf] Render performance baseline is 11ms
+2023-11-29 16:46:34.344 [error] Error while registering log channel file:///home/n30/.config/Code%20-%20OSS/logs/20231129T164623/userDataSync.log Timed out while waiting for file to be created
